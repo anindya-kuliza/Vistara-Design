@@ -387,7 +387,7 @@
           </ul>
         </li>
 
-        <li class="tile">
+        <!-- <li class="tile">
           <span>Vistara Experience</span>
           <img src="img/Sprite_old.png" class="drop-down-icon">
           <ul class="sub-menu column-flex-area no-margin no-padding">
@@ -395,7 +395,7 @@
               <span>submenu</span>
             </li>
           </ul>
-        </li>
+        </li> -->
 
         <li class="tile">
           <span>Club Vistara</span>
@@ -407,7 +407,7 @@
           </ul>
         </li>
 
-        <li class="tile">
+       <!--  <li class="tile">
           <span>Deals and Offers</span>
           <img src="img/Sprite_old.png" class="drop-down-icon">
           <ul class="sub-menu column-flex-area no-margin no-padding">
@@ -415,7 +415,7 @@
               <span>submenu</span>
             </li>
           </ul>
-        </li>
+        </li> -->
       </ul>
 
   </div>
@@ -504,7 +504,8 @@
 							<li><a href="#my_booking_link" data-toggle="tab" class="book">
 								<span class="inline_blk">
 									<span class="my_booking_icon" id="book_icon_change"></span>
-									<span>My Bookings</span>
+									<span id="showin-desk">My Bookings</span>
+									<span id="showin-mobile">My Book...</span>
 								</span>
 							</a></li>
 							<li><a href="#checkin_link" data-toggle="tab" class="checkin">
@@ -516,7 +517,8 @@
 							<li><a href="#flight_status_link" data-toggle="tab" class="status">
 								<span class="inline_blk">
 									<span class="status_icon" id="status_icon_change"></span>
-									<span>Flight Status</span>
+									<span id="showin-desk">Flight Status</span>
+									<span id="showin-mobile">Flight...</span>
 								</span>
 							</a></li>
 							<li class="hide_in_mob"><a href="#flight_pass_link" data-toggle="tab" class="passes">
@@ -1208,9 +1210,13 @@
           <li data-target="#news_and_updates">News & Updates</li>
         </ul>
         <div class="destinations deals-tab" id="destinations">
-          <div class="left-grid">
+          <div class="left-grid" style="position: relative;">
             <p class="title">Vistara Deals from</p>
+			 <div id="destination_list-button"style="position: absolute;right: 38px;z-index: 999;top: 38px;"> <div class="arrow-up" style="display: none;">▲</div>
+                        <div class="arrow-down" style="/*! position: absolute; */">▼</div> 
+              </div>						
             <select id="destination_list" class="destination-list select">
+			            
               <option selected="selected">New Delhi</option>
               <option>Bangalore</option>
               <option>Pune</option>
@@ -1690,8 +1696,11 @@
           </div>
         </div>
         <div class="news-and-updates deals-tab hide" id="news_and_updates">
-          <div class="left-grid">
+          <div class="left-grid" style="position: relative;">
             <p class="title">Select Duration</p>
+			<div style="position: absolute;right: 38px;z-index: 999;top: 38px;"> <div class="arrow-up" style="display: none;">▲</div>
+                        <div class="arrow-down" style="/*! position: absolute; */">▼</div> 
+             </div>
             <select id="duration-list" class="duration-list select">
               <option selected="selected">Last 1 month</option>
               <option>Last 2 months</option>

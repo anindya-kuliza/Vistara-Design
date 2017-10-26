@@ -13,7 +13,11 @@
 	        $(this).addClass('active') .attr("data-target || href");
    
        }); */
-		
+		$(".arrow-up").hide();
+        $(".left-grid").click(function(){
+            
+            $(this).find(".arrow-up, .arrow-down").toggle();
+         });
 		
 	});
 	var activeDealList, dealLists;

@@ -7,6 +7,15 @@
 	border-radius:50%;
 }
  #pauseButton{display:none;} 
+ .deals-tab .ui-selectmenu-button::after {
+    content: "";
+    background: none!important;
+    width: 20px !important;
+    height: 10px !important;
+    position: absolute;
+    right: 5px !important;
+    top: 10px !important;
+}
 .home-banner .carousel-indicators li {
 	min-width: 18px;
 	min-height: 18px;
@@ -124,6 +133,8 @@
 }
 /* @vertical tabs css for booking, manage, check-in and status
 */
+
+
 .home-banner .tabs-wrapper {
 	position: relative;
 }
@@ -1124,7 +1135,8 @@ button:focus{
 		color: #ffffff;
 		background-color: #B99650;
 		border-right: 1px solid #ffffff;
-		padding: 10px 5px;
+		/* padding: 10px 5px; */
+		padding: 10px 18px;
 	}
 	.inline_blk>span{
 		font-size: 12px;
@@ -1611,6 +1623,10 @@ select {
 
 
 @media only screen and (max-width: 768px) {
+	.tab_link>li>a{
+	  /*  padding: 10px 17px!important;
+	   border-right: 1px solid #ffffff; */
+	}
 	.equal-height-col {
 		display: block;
 	}
@@ -1771,8 +1787,8 @@ select {
 	   margin-bottom: 0px;
 	}
 	.tab_link>li>a{
-	   padding: 10px 30px;
-	   border-right: 1px solid #ffffff;
+	  /*  padding: 10px 17px;
+	   border-right: 1px solid #ffffff; */
 	}
 	.modal-content {
 		padding: 10px;
@@ -1783,18 +1799,21 @@ select {
 	}
 }
 
- 
+#showin-mobile{display:block;}
 @media(max-width: 414px){
+	#showin-mobile{display:block;}
+#showin-desk{display:none;}
+	
     .tab_link {
 	   background: #B99650;
 	}
     .nav-pills>li+li {
 		margin-left: 0px;
 	}
-    .tab_link>li>a{
+    /* .tab_link>li>a{
 	   padding: 10px 17px;
 	   border-right: 1px solid #ffffff;
-	}
+	} */
 	.nav-justified>li>a {
 	    margin-bottom: 0px;
 		text-align: center;
@@ -1805,17 +1824,30 @@ select {
 	}
 }
 
-@media(max-width: 375px){
-    .tab_link>li>a{
-	   padding: 10px 12px;
-	   border-right: 1px solid #ffffff;
+
+
+@media(max-width: 500px){
+	.tab_link li a{
+	    padding: 10px 14px;
+	   border-right: 1px solid #ffffff; 
 	}
+	#showin-mobile{display:block;}
+#showin-desk{display:none;}
+}
+@media(max-width: 375px){
+     .tab_link>li>a{
+	   padding: 10px 11px;
+	   border-right: 1px solid #ffffff;
+	} 
 }
 
+@media(min-width: 500px){
+	#showin-mobile{display:none;}	
+}
 
 @media(max-width: 360px){
     .tab_link>li>a{
-	   padding: 10px 11px;
+	   padding: 10px 9px;
 	   border-right: 1px solid #ffffff;
 	}
 }
