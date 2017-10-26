@@ -1,0 +1,2358 @@
+<!doctype html>
+
+<html class="no-js">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/jquery-ui.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/cal.css">
+    <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+
+    <!-- Navigation Bar addition -->
+    <link rel="stylesheet" type="text/css" href="css/navigation_bar.css">
+    <link rel="stylesheet" type="text/css" href="css/vendor/jquery_custom_scrollbar/jquery.mCustomScrollbar.min.css">
+
+  </head>
+  <body>
+
+    <!--navigationbar main division start: uses flex display -->
+    <header class="navigation-bar flex-ul border-boxed-area column-flex-area">
+      <div class="header-info-bar">
+        <div class="content-container flex-ul">
+          <div class="header-info left-part">
+            <div class="carousel slide flex-ul" id="header_info_carousel" data-ride="carousel">
+              <a class="header-info-left-control" href="#header_info_carousel" role="button" data-slide="prev">
+                <img src="./img/Sprite.png" class="header-info-left-arrow"  />
+              </a>
+              <!-- Wrapper for slides -->
+              <div class="carousel-inner header-info-wrapper" role="listbox">
+                <div class="item header-info-text active">
+                  <span class="info-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique, officia, assumenda, ad, quod similique</span>
+                  <span class="know-more">Know More</span>
+                </div>
+                <div class="item header-info-text">
+                  <span class="info-text">Quia laboriosam quo alias, asperiores voluptas ad, eum quasi assumenda, ad, quod similique</span>
+                  <span class="know-more">Know More</span>
+                </div>
+              </div>
+              <a class="header-info-right-control" href="#header_info_carousel" role="button" data-slide="next">
+                <img src="./img/Sprite.png" class="header-info-right-arrow"  />
+              </a>
+            </div>
+          </div>
+          <div class="flex-ul right-part hidden-sm hidden-xs">
+            <div class="contact-container flex-ul dropdown">
+              <img src="img/Sprite.png" class="call" alt="call-icon">
+              <span class="current-lang">Call Us</span>
+              <span class="caret-wrapper dropdown-toggle" data-toggle="dropdown" >
+                <img src="img/Sprite.png" class="dropdown-caret" id="contact-list" alt="lang-select-dropdown">
+              </span>
+              <!--contact dropdown-->
+              <div class="dropdown-menu contact-dropdown header-dropdown">
+                <ul class="no-margin no-padding">
+                  <li class="">
+                    +91 9289228888
+                  </li>
+                  <li class="">
+                    +91 9958962222
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="language-container flex-ul dropdown">
+              <img src="img/Sprite.png" class="flag" alt="flag-icon">
+              <span class="current-lang">Eng</span>
+              <span class="caret-wrapper dropdown-toggle" data-toggle="dropdown" >
+                <img src="img/Sprite.png" class="dropdown-caret" id="contact-list" alt="lang-select-dropdown">
+              </span>
+              <!--language selector dropdown-->
+              <div class="dropdown-menu header-dropdown navbar-language-select-dropdown">
+                <ul class="no-margin no-padding">
+                  <li>
+                    <input type="text" placeholder="Type here..." class="lang-select-input">
+                  </li>
+                  <li class="language-select-dropdown-tile">
+                    <img src="img/sprite.png" class="flag" alt="flag-icon">
+                    <span>Search</span>
+                  </li>
+                  <li class="language-select-dropdown-tile">
+                    <img src="img/sprite.png" class="flag" alt="flag-icon">
+                    <span>Search</span>
+                  </li>
+                  <!--<li class="language-select-dropdown-tile">
+                    <img src="img/sprite.png" class="flag" alt="flag-icon">
+                    <span>Search</span>
+                  </li>
+                  <li class="language-select-dropdown-tile">
+                    <img src="img/sprite.png" class="flag" alt="flag-icon">
+                    <span>Search</span>
+                  </li>
+                  <li class="language-select-dropdown-tile">
+                    <img src="img/sprite.png" class="flag" alt="flag-icon">
+                    <span>Search</span>
+                  </li>
+                  <li class="language-select-dropdown-tile">
+                    <img src="img/sprite.png" class="flag" alt="flag-icon">
+                    <span>Search</span>
+                  </li>
+                  <li class="language-select-dropdown-tile">
+                    <img src="img/sprite.png" class="flag" alt="flag-icon">
+                    <span>Search</span>
+                  </li>
+                  <li class="language-select-dropdown-tile">
+                    <img src="img/sprite.png" class="flag" alt="flag-icon">
+                    <span>Search</span>
+                  </li>
+                  <li class="language-select-dropdown-tile">
+                    <img src="img/sprite.png" class="flag" alt="flag-icon">
+                    <span>Search</span>
+                  </li>-->
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--navigationbar left part division start: uses flex display-->
+      <div class="navbarparent flex-ul">
+        <div class="left-part flex-ul">
+          <!--navigationbar responsive menu button start: hidden above 1200px -->
+          <div class="menu-button">
+            <div class="menu-button-line"></div>
+            <div class="menu-button-line"></div>
+            <div class="menu-button-line"></div>
+          </div>
+          <!--navigationbar responsive menu button end: hidden above 1200px-->
+            <img src="img/sprite.png" alt="mainlogo" class="main-logo">
+        </div>
+        <!--navigationbar left part division end: uses flex display-->
+        <!--navigationbar right part division start: uses flex display-->
+        <div class="right-part flex-ul">
+          <ul class="collapse flex-ul no-padding no-margin">
+		  
+            <li class="navigation-bar-text">
+			    <a href="#" class="submenu-dropdown">Plan Travel</a>
+				  <!-- Plan travel menu dropdown start -->
+				  <div class="nav-dropdown-content flex-ul" id="plan-and-book-dropdown">
+					<div class="nav-dropdown-bg">
+					  <div class="nav-dropdown-wrapper flex-ul">
+						<ul class="text-area no-padding no-margin flex-ul dd_text">
+						  <li class="nav-dropdown-content-tile">
+							<img src="img/sprite.png" class="sub-tile-icon">
+							<span>Flights </span>
+							<p>Check on availability, confirm your travel details and fly with us.</p>
+						  </li>
+						  <li class="nav-dropdown-content-tile">
+							<img src="img/sprite.png" class="sub-tile-icon">
+							<span>Hotels</span>
+							<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
+						  </li>
+						  <li class="nav-dropdown-content-tile">
+							<img src="img/sprite.png" class="sub-tile-icon">
+							<span>Cars</span>
+							<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
+						  </li>
+						  <li class="nav-dropdown-content-tile">
+							<img src="img/sprite.png" class="sub-tile-icon">
+							<span>Group Travel</span>
+							<p>Travelling together is more fun! Get exclusive Group Booking benefits if you are a group of 10 or more travelling with Vistara.</p>
+						  </li>
+						  <li class="nav-dropdown-content-tile">
+							<img src="img/sprite.png" class="sub-tile-icon">
+							<span>Getaways</span>
+							<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
+						  </li>
+						  <li class="nav-dropdown-content-tile">
+							<img src="img/sprite.png" class="sub-tile-icon">
+							<span>Check - In </span>
+							<p>Check-in through our multiple options for a hassle-free flying experience.</p>
+						  </li>
+						  <li class="nav-dropdown-content-tile">
+							<img src="img/sprite.png" class="sub-tile-icon">
+							<span>Flight Status</span>
+							<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
+						  </li>
+						  <li class="nav-dropdown-content-tile">
+							<img src="img/sprite.png" class="sub-tile-icon">
+							<span>Manage Booking</span>
+							<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
+						  </li>
+						  <li class="nav-dropdown-content-tile">
+							<img src="img/sprite.png" class="sub-tile-icon">
+							<span>Extras and Upgrades</span>
+							<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
+						  </li>
+						  <li class="nav-dropdown-content-tile">
+							<img src="img/sprite.png" class="sub-tile-icon">
+							<span>Flight Schedule</span>
+							<p>See our most updated flight schedules to plan your trip better.</p>
+						  </li>
+						  <li class="nav-dropdown-content-tile">
+							<img src="img/sprite.png" class="sub-tile-icon">
+							<span>Destinations</span>
+							<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
+						  </li>
+						  <li class="nav-dropdown-content-tile">
+							<img src="img/sprite.png" class="sub-tile-icon">
+							<span>Deals and Offers</span>
+							<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
+						  </li>
+						</ul>
+						<div class="image-area">
+						  <img src="img/submenu-ad.png" alt="menu-logo">
+						</div>
+					  </div>
+					</div>
+				  </div>
+			</li>
+			
+            <li class="navigation-bar-text">
+              <a href="#" class="submenu-dropdown">Travel Information</a>
+              <!-- travel information menu dropdown start -->
+				  <div class="nav-dropdown-content flex-ul" id="plan-and-book-dropdown">
+					<div class="nav-dropdown-bg">
+					  <div class="nav-dropdown-wrapper flex-ul">
+						<ul class="text-area no-padding no-margin flex-ul dd_text">
+						  <li class="nav-dropdown-content-tile">
+							<img src="img/sprite.png" class="sub-tile-icon">
+							<span>Where we fly </span>
+							<p>See our route map to learn more about where we fly to.</p>
+						  </li>
+						  <li class="nav-dropdown-content-tile">
+							<img src="img/sprite.png" class="sub-tile-icon">
+							<span>Fare Rules</span>
+							<p>See the terms and conditions applicable to each cabin class and fare family.</p>
+						  </li>
+						  <li class="nav-dropdown-content-tile">
+							<img src="img/sprite.png" class="sub-tile-icon">
+							<span>Special Assistance</span>
+							<p>Read about the services we provide for customers with special needs.</p>
+						  </li>
+						  <li class="nav-dropdown-content-tile">
+							<img src="img/sprite.png" class="sub-tile-icon">
+							<span>Baggage info</span>
+							<p>Read all that you need to know about travelling with baggage.</p>
+						  </li>
+						  <li class="nav-dropdown-content-tile">
+							<img src="img/sprite.png" class="sub-tile-icon">
+							<span>Lounge Info</span>
+							<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
+						  </li>
+						  <li class="nav-dropdown-content-tile">
+							<img src="img/sprite.png" class="sub-tile-icon">
+							<span>Vistara experience</span>
+							<p>Sit back and enjoy the Vistara experience. Make memories for a lifetime.</p>
+						  </li>
+						  <li class="nav-dropdown-content-tile">
+							<img src="img/sprite.png" class="sub-tile-icon">
+							<span>Flight Info</span>
+							<p>See our most updated flight schedules to plan your trip better.</p>
+						  </li>
+						  <li class="nav-dropdown-content-tile">
+							<img src="img/sprite.png" class="sub-tile-icon">
+							<span>Seat map</span>
+							<p>Find out more about the seats onboard and fly comfortably with us with the seats of your choice.</p>
+						  </li>
+						  <li class="nav-dropdown-content-tile">
+							<img src="img/sprite.png" class="sub-tile-icon">
+							<span>Travel certificate</span>
+							<p>Travel certificate is a proof of travel provided at a charge of INR 300 per person per sector.</p>
+						  </li>
+						</ul>
+						<div class="image-area">
+						  <img src="img/submenu-ad.png" alt="menu-logo">
+						</div>
+					  </div>
+					</div>
+				  </div>
+            </li>
+			
+			
+            <li class="navigation-bar-text">
+			   <a href="#" class="submenu-dropdown">Club Vistara</a>
+              <!-- travel information menu dropdown start -->
+				  <div class="nav-dropdown-content flex-ul" id="plan-and-book-dropdown">
+					<div class="nav-dropdown-bg">
+					  <div class="nav-dropdown-wrapper flex-ul">
+						<ul class="text-area no-padding no-margin flex-ul dd_text">
+						  <li class="nav-dropdown-content-tile">
+							<img src="img/sprite.png" class="sub-tile-icon">
+							<span>About Club Vistara</span>
+							<p>Feel exclusive and experience a host of exciting benefits available for our members.</p>
+						  </li>
+						  <li class="nav-dropdown-content-tile">
+							<img src="img/sprite.png" class="sub-tile-icon">
+							<span>My Account </span>
+							<p>Already a Member? View your account summary including points, membership level and your Ecard.</p>
+						  </li>
+						  <li class="nav-dropdown-content-tile">
+							<img src="img/sprite.png" class="sub-tile-icon">
+							<span>Enrol now</span>
+							<p>Enrol in Club Vistara, the fastest rewarding frequent flyer program, and earn 500 CV Points. </p>
+							<a href="#" class="enrol_btn">ENROL</a>
+						  </li>
+						  <li class="nav-dropdown-content-tile">
+							<img src="img/sprite.png" class="sub-tile-icon">
+							<span>Tiers and Privileges</span>
+							<p>Our tier based rewards structure allows you to move up tiers faster and maintain your privilege status with every Vistara flight.</p>
+						  </li>
+						  <li class="nav-dropdown-content-tile">
+							<img src="img/sprite.png" class="sub-tile-icon">
+							<span>Earn and Redeem CV points</span>
+							<p>Fastest path to award flights.</p>
+						  </li>
+						  <li class="nav-dropdown-content-tile">
+							<img src="img/sprite.png" class="sub-tile-icon">
+							<span>Partners</span>
+							<p>Sit back and enjoy the Vistara experience. Make memories for a lifetime.</p>
+						  </li>
+						  
+						</ul>
+						<div class="image-area">
+						  <img src="img/submenu-ad.png" alt="menu-logo">
+						</div>
+					  </div>
+					</div>
+				  </div>
+			</li>
+			
+			
+            <!-- 
+            <li class="login">Login</li>
+            <li class="login-signup">|</li> -->
+			
+			
+            <li class="navigation-bar-text signup"> <img class="account-logo" src="img/sprite.png"> <span>Sign Up</span></li>
+          </ul>
+		  
+          <!--navigationbar flag icon: uses Sprite image: Full sprite image of all flags reqd at later stages-->
+        </div>
+      </div>
+    </header>
+    <!--navigationbar main division end: uses flex display -->
+
+    <!--navigationbar responsive division start: uses flex display: hidden above 1200px and below that triggerd by menubuttonresponsive -->
+    <!--navigation-bar-responsive-tile correspond to the navlinks of web navigationbar -->
+    <!--first navigation-bar-responsive-tile contains backbutton and thus has additional css corresponding to it -->
+    <!--navigation-bar-responsive-sub corresponds to the container sub menu of each menu navlink -->
+    <!--navigation-bar-responsive-sub-tile correspond to container for the contents of submenu -->
+    <!--additional menu and submenu tiles can be added by keeping the structure prescribed -->
+    <div class="navigation-bar-responsive column-flex-area">
+      <span class="menu-back-icon">
+        <img src="img/Sprite.png" alt="backbutton" class="back-icon">
+      </span>
+      <ul>
+        <li class="tile">
+          <span>Plan and Book</span>
+          <img src="img/Sprite_old.png" class="drop-down-icon">
+          <ul class="sub-menu column-flex-area no-margin no-padding">
+            <li class="sub-menu-tile flex-ul">
+              <span>Booking</span>
+            </li>
+            <li class="sub-menu-tile flex-ul">
+              <span>Flight Schedule</span>
+            </li>
+            <li class="sub-menu-tile flex-ul">
+              <span>Fare Rules</span>
+            </li>
+            <li class="sub-menu-tile flex-ul">
+              <span>Where We Fly</span>
+            </li>
+            <li class="sub-menu-tile flex-ul">
+              <span>Enhance The New Feeling</span>
+            </li>
+            <li class="sub-menu-tile flex-ul">
+              <span>Group Booking</span>
+            </li>
+          </ul>
+        </li>
+
+        <li class="tile">
+          <span>Travel Information</span>
+          <img src="img/Sprite_old.png" class="drop-down-icon">
+          <ul class="sub-menu column-flex-area no-margin no-padding">
+            <li class="sub-menu-tile flex-ul">
+              <span>submenu</span>
+            </li>
+          </ul>
+        </li>
+
+        <li class="tile">
+          <span>Vistara Experience</span>
+          <img src="img/Sprite_old.png" class="drop-down-icon">
+          <ul class="sub-menu column-flex-area no-margin no-padding">
+            <li class="sub-menu-tile flex-ul">
+              <span>submenu</span>
+            </li>
+          </ul>
+        </li>
+
+        <li class="tile">
+          <span>Club Vistara</span>
+          <img src="img/Sprite_old.png" class="drop-down-icon">
+          <ul class="sub-menu column-flex-area no-margin no-padding">
+            <li class="sub-menu-tile flex-ul">
+              <span>submenu</span>
+            </li>
+          </ul>
+        </li>
+
+        <li class="tile">
+          <span>Deals and Offers</span>
+          <img src="img/Sprite_old.png" class="drop-down-icon">
+          <ul class="sub-menu column-flex-area no-margin no-padding">
+            <li class="sub-menu-tile flex-ul">
+              <span>submenu</span>
+            </li>
+          </ul>
+        </li>
+      </ul>
+
+  </div>
+  <!--navigation-bar-responsive end -->
+
+       <div class="home-banner">
+      <div id="myCarousel" class="carousel slide banner-carousel homeCarousel" data-ride="carousel">
+        <!-- Indicators -->
+        <ol class="carousel-indicators content-container">
+          <li data-target="#myCarousel" data-slide-to="0" class="indicator-icon active"></li>
+          <li data-target="#myCarousel" data-slide-to="1" class="indicator-icon"></li>
+          <li data-target="#myCarousel" data-slide-to="2" class="indicator-icon"></li>
+          <li class="carasuel_cntrl pause-carousel" id="pauseButton"></li>
+        </ol>
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner" role="listbox">
+          <div class="item item-1 active">
+            <!-- <img src="img/banner-one.png" alt="img1" class="img-responsive"> -->
+            <div class="content-container caption-wrapper">
+              <div class="carousel-caption">
+                <div class="caption">More Flights, More Choices</div>
+                <div class="about-caption">Introducing new flights from Ahmedabad, Bengaluru, Chandigarh, Delhi, Goa and Mumbai</div>
+                <div class="know-more-btn"><span>Know More</span></div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="item item-2">
+            <!-- <img src="img/banner-two.png" alt="img3" class="img-responsive"> -->
+            <div class="content-container caption-wrapper">
+              <div class="carousel-caption">
+                <div class="caption">More Flights, More Choices</div>
+                <div class="about-caption">Introducing new flights from Ahmedabad, Bengaluru, Chandigarh, Delhi, Goa and Mumbai</div>
+                <div class="know-more-btn"><span>Know More</span></div>
+              </div>
+            </div>
+          </div>
+		  
+		  <div class="item item-3">
+            <!-- <img src="img/banner-three.png" alt="img2" class="img-responsive"> -->
+            <div class="content-container caption-wrapper">
+              <div class="carousel-caption">
+                <div class="caption">More Flights, More Choices</div>
+                <div class="about-caption">Introducing new flights from Ahmedabad, Bengaluru, Chandigarh, Delhi, Goa and Mumbai</div>
+                <div class="know-more-btn"><span>Know More</span></div>
+              </div>
+            </div>
+          </div>
+		  
+        </div>
+      </div>
+	  
+   <!--home carousel -->
+	  
+	  
+      <div class="tabs-wrapper tab_block">
+	    <!-- tab block start -->
+		<div class="content-container tab_position">
+	        <div id="trip_tab">	
+			    <div class="tab_mob_wrap">
+						<ul  class="nav nav-pills nav-justified tab_link clearfix">
+							<li class="active"><a  href="#flight_link" data-toggle="tab" class="flight">
+								<span class="inline_blk">
+									<span class="flight_icon_active" id="flight_icon_change"></span>
+									<span>Flights</span>
+								</span>
+							</a></li>
+							<li class="hide_in_mob"><a href="#hotel_link" data-toggle="tab" class="hotel">
+								<span class="inline_blk">
+									<span class="hotel_icon" id="hotel_icon_change"></span>
+									<span>Hotels</span>
+								</span>
+							</a></li>
+							<li class="hide_in_mob"><a href="#car_link" data-toggle="tab" class="car">
+								<span class="inline_blk">
+									<span class="car_icon" id="car_icon_change"></span>
+									<span>Cars</span>
+								</span>
+							</a></li>
+							<li class="hide_in_mob"><a href="#gateaway_link" data-toggle="tab" class="gateaway">
+								<span class="inline_blk">
+									<span class="gateaway_icon" id="gateaway_icon_change"></span>
+									<span>Gateaways</span>
+								</span>
+							</a></li>
+							<li><a href="#my_booking_link" data-toggle="tab" class="book">
+								<span class="inline_blk">
+									<span class="my_booking_icon" id="book_icon_change"></span>
+									<span>My Bookings</span>
+								</span>
+							</a></li>
+							<li><a href="#checkin_link" data-toggle="tab" class="checkin">
+								<span class="inline_blk">
+									<span class="checkin_icon" id="checkin_icon_change"></span>
+									<span>Check-In</span>
+								</span>
+							</a></li>
+							<li><a href="#flight_status_link" data-toggle="tab" class="status">
+								<span class="inline_blk">
+									<span class="status_icon" id="status_icon_change"></span>
+									<span>Flight Status</span>
+								</span>
+							</a></li>
+							<li class="hide_in_mob"><a href="#flight_pass_link" data-toggle="tab" class="passes">
+								<span class="inline_blk">
+									<span class="passes_icon" id="passes_icon_change"></span>
+									<span>Flight Passess</span>
+								</span>
+							</a></li>
+						</ul>
+				</div>
+
+				<div class="tab-content trip_content clearfix">
+				
+				    <!-- Book a trip block -->
+					<div class="tab-pane active" id="flight_link">
+					    <form class="form">
+						    <div class="col-xs-12">
+								   <div class="checkbox col-sm-6 padd_0px">
+										<label style="font-size: 1em">
+											<input type="checkbox" value="" >
+											<span class="cr"><i class="cr-icon fa fa-check"></i></span>
+											Redeem CV points
+										</label>
+									</div>
+									<div class="btn-group pull-right mob_trip">
+									  <button type="button" class="btn trip_btn round">Round trip</button>
+									  <button type="button" class="btn trip_btn one">One way</button>
+									</div>
+						    </div>
+							
+							<div class="col-xs-12 space_margin_btm_20"></div>
+							
+							<div class="col-xs-12">
+							<div class="row">
+								<div class="col-md-3 col-sm-6">
+									<select class="form-control trip_input">
+									    <option value="" selected>From</option>
+									    <option value="volvo">Volvo</option>
+                                        <option value="saab">Saab</option>
+                                        <option value="opel">Opel</option>
+                                        <option value="audi">Audi</option>
+									</select>
+									<span class="location_icon"></span>
+									<span class="roundtrip_icon hidden-xs"></span>
+								</div>
+								<div class="col-md-3 col-sm-6">
+								    <select class="form-control trip_input">
+									   <option value="" selected>To</option>
+									   <option value="volvo">Volvo</option>
+                                        <option value="saab">Saab</option>
+                                        <option value="opel">Opel</option>
+                                        <option value="audi">Audi</option>
+									</select>
+									<span class="location_icon"></span>
+								</div>
+								<div class="col-md-3 col-sm-6">
+								    <input type="text" class="form-control trip_input" id="depart" placeholder="Depart">
+									<span class="calender_icon" data-target="#departModal" data-toggle="modal"></span>
+								</div>
+								<div class="col-md-3 col-sm-6">
+									<input type="text" class="form-control trip_input" id="return" placeholder="Return">
+									<span class="calender_icon" data-target="#returnModal" data-toggle="modal"></span>
+								</div>
+							</div>
+							</div>
+							
+							
+							<div class="col-xs-12 space_margin_btm_20 hidden-sm hidden-xs"></div>
+							
+							<div class="col-xs-12">
+							<div class="row">
+								<div class="col-md-6 col-sm-6">
+									<input type="text" class="form-control trip_input" placeholder="Passengers">
+									<span class="passenger_icon" data-target="#passengerModal" data-toggle="modal"></span>
+								</div>
+								<div class="col-md-3 col-sm-6">
+								   <input type="text" class="form-control trip_input" placeholder="Promo code">
+								</div>
+								<div class="col-md-3">
+									<button class="search_flight_btn">Search Flights</button>
+								</div>
+							</div>
+							</div>
+							
+						</form>
+			        </div>
+					
+					<!-- Hotel block-->
+					<div class="tab-pane" id="hotel_link">
+						 <form class="form">
+						    
+							<div class="col-xs-12">
+							    <p class="font-18 clr_purple">Find the Best Deals</p>
+								<p>634,000 Hotels, Apartments, Villas and more</p>
+							</div>
+							
+							<div class="col-xs-12 space_margin_btm_20"></div>
+						    
+							<div class="col-xs-12">
+							<div class="row">
+								<div class="col-md-3 col-sm-6">
+									<select class="form-control trip_input">
+									   <option value="" selected>Destination/hotel name</option>
+									   <option value="volvo">Volvo</option>
+                                        <option value="saab">Saab</option>
+                                        <option value="opel">Opel</option>
+                                        <option value="audi">Audi</option>
+									</select>
+									<span class="location_icon"></span>
+								</div>
+								<div class="col-md-3 col-sm-6">
+								    <input type="text" class="form-control trip_input" placeholder="Check-In date">
+									<span class="calender_icon"></span>
+								</div>
+								<div class="col-md-3 col-sm-6">
+								   <input type="text" class="form-control trip_input" placeholder="Check-Out date">
+									<span class="calender_icon"></span>
+								</div>
+								<div class="col-md-3 col-sm-6">
+									<button class="search_flight_btn">Search Hotel</button>
+								</div>
+							</div>
+							</div>
+							
+							
+							<div class="col-xs-12 space_margin_btm_20"></div>
+							
+							<div class="col-xs-12">
+							    <p class="font-12">Powerd by <a href="#" class="clr_purple font-16">Booking.com</a></p>
+							</div>
+							
+						</form>
+					</div>
+					
+					<!-- Cars block-->
+					<div class="tab-pane" id="car_link">
+						 <form class="form">
+						    <div class="col-xs-12">
+								<div id="exTab1">	
+									<ul  class="nav nav-pills drive_tab">
+										<li class="active"><a  href="#self" data-toggle="tab">Self Drive</a></li>
+										<li><a href="#chauffeur" data-toggle="tab">Chauffeur Drive</a></li>
+									</ul>
+									
+									<div class="col-xs-12 space_margin_btm_20"></div>
+
+									<div class="tab-content clearfix">
+									
+										<div class="tab-pane active" id="self">
+											<div class="row">
+												<div class="col-md-3 col-sm-6">
+													<select class="form-control trip_input">
+													   <option value="" selected>City</option>
+													   <option value="volvo">Volvo</option>
+                                                       <option value="saab">Saab</option>
+                                                       <option value="opel">Opel</option>
+                                                       <option value="audi">Audi</option>
+													</select>
+													<span class="location_icon"></span>
+												</div>
+												<div class="col-md-3 col-sm-6">
+													<input type="text" class="form-control trip_input" placeholder="Delivery address">
+													<span class="location_icon"></span>
+												</div>
+												<div class="col-md-3 col-sm-6">
+												   <input type="text" class="form-control trip_input" placeholder="Start date">
+													<!-- <span class="calender_icon"></span> -->
+													<span class="calender_icon" data-target="#startDate" data-toggle="modal"></span>
+												</div>
+												<div class="col-md-3 col-sm-6">
+													<input type="text" class="form-control trip_input" placeholder="End date">
+													<!-- <span class="calender_icon"></span> -->
+													<span class="calender_icon" data-target="#endDate" data-toggle="modal"></span>
+												</div>
+											</div>
+											
+											<div class="col-xs-12 space_margin_btm_20"></div>
+											
+											<div class="row">
+												<div class="col-md-3 col-sm-3 col-xs-12 pull-right">
+													<button class="search_flight_btn">Search</button>
+												</div>
+											</div>
+										</div>
+										
+										
+										<div class="tab-pane" id="chauffeur">
+											<div class="row">
+											
+											    <div class="cl-xs-12">
+												   <div class="car_radio">
+														<label id="airport">
+															<input type="radio" name="status" value="" checked>
+															<span class="cr"><i class="cr-icon fa fa-circle"></i></span>
+															Airport Transfers
+														</label>
+													</div>
+													<div class="car_radio">
+														<label id="within_city">
+															<input type="radio" name="status" value="">
+															<span class="cr"><i class="cr-icon fa fa-circle"></i></span>
+															Within City
+														</label>
+													</div>
+													<div class="car_radio">
+														<label id="outstation">
+															<input type="radio" name="status" value="">
+															<span class="cr"><i class="cr-icon fa fa-circle"></i></span>
+															Outstation
+														</label>
+													</div>
+													<div class="car_radio">
+														<label id="one_way">
+															<input type="radio" name="status" value="">
+															<span class="cr"><i class="cr-icon fa fa-circle"></i></span>
+															One - way Intercity Transfer
+														</label>
+													</div>
+												</div>
+												
+												<div class="clearfix airport">
+													<div class="col-md-3 col-sm-6">
+														<select class="form-control trip_input">
+														   
+														   <option value="" selected>City</option>
+													   <option value="volvo">Volvo</option>
+                                                       <option value="saab">Saab</option>
+                                                       <option value="opel">Opel</option>
+                                                       <option value="audi">Audi</option>
+														</select>
+														<span class="location_icon"></span>
+													</div>
+													<div class="col-md-3 col-sm-6">
+													    <select class="form-control trip_input">
+														   <option value="" selected>Reporting address</option>
+														   
+													   <option value="volvo">Volvo</option>
+                                                       <option value="saab">Saab</option>
+                                                       <option value="opel">Opel</option>
+                                                       <option value="audi">Audi</option>
+														</select>
+														<span class="location_icon"></span>
+													</div>
+													<div class="col-md-3 col-sm-6">
+													   <input type="text" class="form-control trip_input" placeholder="Start date">
+														<span class="calender_icon"></span>
+													</div>
+													<div class="col-md-3 col-sm-6">
+														<button class="search_flight_btn">Search</button>
+													</div>
+												</div>
+											</div>
+											
+											
+											<div class="clearfix within_city blk_hidden">
+											   <div class="row">
+													<div class="col-md-3 col-sm-6">
+														<select class="form-control trip_input">
+														   <option value="">City</option>
+														</select>
+														<span class="location_icon"></span>
+													</div>
+													<div class="col-md-3 col-sm-6">
+													    <select class="form-control trip_input">
+														   <option value="">Reporting address</option>
+														</select>
+														<span class="location_icon"></span>
+													</div>
+													<div class="col-md-3 col-sm-6">
+													   <input type="text" class="form-control trip_input" placeholder="Start date">
+														<span class="calender_icon"></span>
+													</div>
+													<div class="col-md-3 col-sm-6">
+														<input type="text" class="form-control trip_input" placeholder="End date">
+														<span class="calender_icon"></span>
+													</div>
+												</div>
+											
+												<div class="col-xs-12 space_margin_btm_20"></div>
+												
+												<div class="row">
+													<div class="col-md-3 col-sm-3 col-xs-12 pull-right">
+														<button class="search_flight_btn">Search</button>
+													</div>
+												</div>
+											</div>
+											
+											<div class="clearfix outstation blk_hidden">
+											   <div class="row">
+													<div class="col-md-3 col-sm-6">
+														<select class="form-control trip_input">
+														   <option value="">City</option>
+														</select>
+														<span class="location_icon"></span>
+													</div>
+													<div class="col-md-3 col-sm-6">
+														<select class="form-control trip_input">
+														   <option value="">Other city</option>
+														</select>
+														<span class="location_icon"></span>
+													</div>
+													<div class="col-md-3 col-sm-6">
+													   <input type="text" class="form-control trip_input" placeholder="Start date">
+														<span class="calender_icon"></span>
+													</div>
+													<div class="col-md-3 col-sm-6">
+														<input type="text" class="form-control trip_input" placeholder="End date">
+														<span class="calender_icon"></span>
+													</div>
+												</div>
+											
+												<div class="col-xs-12 space_margin_btm_20"></div>
+												
+												<div class="row">
+												    <div class="col-md-3 col-sm-6">
+														<input type="text" class="form-control trip_input" placeholder="Reporting address">
+														<span class="location_icon"></span>
+													</div>
+													<div class="col-md-3 col-sm-3 col-xs-12 pull-right">
+														<button class="search_flight_btn">Search</button>
+													</div>
+												</div>
+												<div class="checkbox col-sm-12 padd_0px">
+													<label style="font-size: 1em">
+														<input type="checkbox" value="">
+														<span class="cr"><i class="cr-icon fa fa-check"></i></span>
+														Book a car for a multi city trip
+													</label>
+												</div>
+											</div>
+											
+											<div class="clearfix one_way blk_hidden">
+											   <div class="row">
+													<div class="col-md-3 col-sm-6">
+														<select class="form-control trip_input">
+														   <option value="">City</option>
+														</select>
+														<span class="location_icon"></span>
+													</div>
+													<div class="col-md-3 col-sm-6">
+														<select class="form-control trip_input">
+														   <option value="">Other city</option>
+														</select>
+														<span class="location_icon"></span>
+													</div>
+													<div class="col-md-3 col-sm-6">
+														<input type="text" class="form-control trip_input" placeholder="Reporting address">
+														<span class="location_icon"></span>
+													</div>
+													<div class="col-md-3 col-sm-6">
+														<input type="text" class="form-control trip_input" placeholder="End date">
+														<span class="calender_icon"></span>
+													</div>
+												</div>
+											
+												<div class="col-xs-12 space_margin_btm_20"></div>
+												
+												<div class="row">
+													<div class="col-md-3 col-sm-3 col-xs-12 pull-right">
+														<button class="search_flight_btn">Search</button>
+													</div>
+												</div>
+											</div>
+											
+										</div>
+								
+									</div>
+								</div>
+							</div>
+						</form>
+				</div>
+				
+				
+				
+				<!-- Gateaway block-->
+					<div class="tab-pane" id="gateaway_link">
+						 <form class="form">
+						 
+						    <div class="col-xs-12 space_margin_btm_20"></div>
+						 
+						 
+						    <div class="col-xs-12">
+								<div class="row">
+									<div class="col-md-3 col-sm-6">
+									    <select class="form-control trip_input">
+										   <option value="" selected>Where do you want to go?</option>
+										   <option value="volvo">Volvo</option>
+                                           <option value="saab">Saab</option>
+                                           <option value="opel">Opel</option>
+                                           <option value="audi">Audi</option>
+										</select>
+										<span class="location_icon"></span>
+									</div>
+									<div class="col-md-3 col-sm-6">
+									    <select class="form-control trip_input">
+										   <option value="" selected>City of Origin</option>
+										   <option value="volvo">Volvo</option>
+                                           <option value="saab">Saab</option>
+                                           <option value="opel">Opel</option>
+                                           <option value="audi">Audi</option>
+										</select>
+										<span class="location_icon"></span>
+									</div>
+									<div class="col-md-3 col-sm-6">
+									    <select class="form-control trip_input">
+										   <option value="" selected>Returning to</option>
+										   <option value="volvo">Volvo</option>
+                                           <option value="saab">Saab</option>
+                                           <option value="opel">Opel</option>
+                                           <option value="audi">Audi</option>
+										</select>
+										<span class="location_icon"></span>
+									</div>
+									<div class="col-md-3 col-sm-6">
+										<input type="text" class="form-control trip_input" placeholder="Select date">
+										<span class="calender_icon"></span>
+									</div>
+								</div>
+							</div>
+							
+							<div class="col-xs-12 space_margin_btm_20"></div>
+							
+							<div class="col-xs-12">
+								<div class="row">
+									<div class="col-md-3 col-sm-3 col-xs-12 pull-right">
+										<button class="search_flight_btn">Search</button>
+									</div>
+								</div>
+							</div>
+							
+							
+						</form>
+				</div>
+				
+				
+				<!-- My Booking block-->
+					<div class="tab-pane" id="my_booking_link">
+						 <form class="form">
+						    <img src="img/mybookings-pattern.png" class="checkin_bg"/>
+						    <div class="col-xs-12 space_margin_btm_20"></div>
+						 
+						 
+						    <div class="col-xs-12">
+								<div class="row">
+									<div class="col-md-3 col-sm-4">
+										<input type="text" class="form-control trip_input" placeholder="Booking reference number">
+									</div>
+									<div class="col-md-3 col-sm-4">
+										<input type="text" class="form-control trip_input" placeholder="Last name primary passenger">
+									</div>
+									<div class="col-md-3 col-sm-4">
+										<button class="search_flight_btn">Submit</button>
+									</div>
+								</div>
+							</div>
+							
+							
+							<div class="col-xs-12">
+							    <div class="col-md-6 col-sm-7">
+									<p class="or font-16">OR</p>
+								</div>
+							</div>
+							
+							
+							<div class="col-xs-12">
+								<div class="row">
+									<div class="col-md-6 col-sm-8">
+										<span>If you are a club vistara member and have an upcoming trip booked with us, you may view it here.</span>
+									</div>
+									<div class="col-md-3 col-sm-4 mob_mar_top_15px">
+										<button class="search_flight_btn">Find My Trip</button>
+									</div>
+								</div>
+							</div>
+							
+							
+							<div class="col-xs-12 show_in_mob">
+								<div class="col-xs-12">
+									<div class="row">
+										<div class="col-xs-6 mob_padd_right padd_0px">
+											<a href="#" class="secondary_blk">
+												<span class="mob_inline_blk">
+													<span class="hotel_icon secondary_blk_icon"></span>
+													<span>Hotels</span>
+												</span>
+											</a>
+										</div>
+										<div class="col-xs-6 mob_padd_left padd_0px">
+											<a href="#" class="secondary_blk">
+												<span class="mob_inline_blk">
+													<span class="car_icon secondary_blk_icon"></span>
+													<span>Cars</span>
+												</span>
+											</a>
+										</div>
+									</div>
+									<div class="row mob_mar_top_15px">
+										<div class="col-xs-6 mob_padd_right padd_0px">
+											<a href="#" class="secondary_blk">
+												<span class="mob_inline_blk">
+													<span class="gateaway_icon secondary_blk_icon"></span>
+													<span>Gateaways</span>
+												</span>
+											</a>
+										</div>
+										<div class="col-xs-6 mob_padd_left padd_0px">
+											<a href="#" class="secondary_blk">
+												<span class="mob_inline_blk">
+													<span class="passes_icon secondary_blk_icon"></span>
+													<span>Flight Passes</span>
+												</span>
+											</a>
+										</div>
+									</div>
+								</div>
+							</div>
+							
+							
+						</form>
+				</div>
+				
+				
+				
+				<!-- Flight Status block-->
+					<div class="tab-pane" id="flight_status_link">
+						 <form class="form">
+						 
+						    <div class="col-xs-12">
+								<div class="row">
+									<div class="col-md-3 col-sm-3">
+										<div class="radio">
+											<label>
+												<input type="radio" name="status" value="">
+												<span class="cr"><i class="cr-icon fa fa-circle"></i></span>
+												By Flight Number
+											</label>
+										</div>
+									</div>
+									<div class="col-md-3 col-sm-3">
+										<div class="radio">
+											<label>
+												<input type="radio" name="status" value="" >
+												<span class="cr"><i class="cr-icon fa fa-circle"></i></span>
+												By Route
+											</label>
+										</div>
+									</div>
+								</div>
+							</div>
+							
+							<div class="col-xs-12 space_margin_btm_20"></div>
+						    
+							
+							<div class="col-xs-12">
+								<div class="row">
+									<div class="col-md-3 col-sm-6">
+										<input type="text" class="form-control trip_input" placeholder="Flight number">
+									</div>
+									<div class="col-md-3 col-sm-6">
+									    <select class="form-control trip_input">
+										   <option value="" selected>Origin</option>
+										   <option value="volvo">Volvo</option>
+                                           <option value="saab">Saab</option>
+                                           <option value="opel">Opel</option>
+                                           <option value="audi">Audi</option>
+										</select>
+										<span class="location_icon"></span>
+									</div>
+									<div class="col-md-3 col-sm-6">
+									   <input type="text" class="form-control trip_input" placeholder="Flight date">
+										<span class="calender_icon"></span>
+									</div>
+									<div class="col-md-3 col-sm-6">
+										<button class="search_flight_btn">Search Hotel</button>
+									</div>
+								</div>
+							</div>
+							
+							
+						</form>
+				</div>
+				
+				
+				
+				<!-- Checkin block-->
+					<div class="tab-pane" id="checkin_link">
+						 <form class="form">
+						    <img src="img/mybookings-pattern.png" class="checkin_bg"/>
+						    <div class="col-xs-12 space_margin_btm_20"></div>
+						 
+						 
+						    <div class="col-xs-12">
+								<div class="row">
+									<div class="col-md-3 col-sm-6">
+										<input type="text" class="form-control trip_input" placeholder="Last name">
+									</div>
+									<div class="col-md-3 col-sm-6">
+										<input type="text" class="form-control trip_input" placeholder="Booking reference number">
+									</div>
+								</div>
+							</div>
+							
+							
+							<div class="col-xs-12">
+							    <div class="col-md-6">
+									<p class="or font-16">OR</p>
+								</div>
+							</div>
+							
+							
+							<div class="col-xs-12">
+								<div class="row">
+									<div class="col-md-6 col-sm-6">
+										<input type="text" class="form-control trip_input" placeholder="E-Ticket number">
+									</div>
+									<div class="col-md-3 col-sm-6">
+										<button class="search_flight_btn">Submit</button>
+									</div>
+								</div>
+							</div>
+							
+							
+						</form>
+				</div>
+				
+				
+				
+				<!-- Flight passes block-->
+					<div class="tab-pane" id="flight_pass_link">
+						<div class="col-xs-12">
+							<div class="row">
+								<div class="col-md-5">
+									<p class="font-18 clr_purple">Find the Best Deals</p>
+									<p>Sign in and access your Flight Pass to book new flights.</p>
+									<div class="col-xs-12 space_margin_btm_10"></div>
+									<table class="pass_table">
+									    <tr>
+										    <td align="right"><span class="manage_icon"></span></td>
+								            <td align="left" valign="top"><a href="#" class="know_icon">Manage My Flight Passes<a/></td>
+										</tr>
+										
+										<tr>
+										    <td align="right"><span class="flight_pass_icon"></span></td>
+								            <td align="left" valign="top"><a href="#" class="know_icon">View My Flight Pass Booking<a/></td>
+										</tr>
+									</table>
+								</div>
+								
+								<div class="col-md-7 divider">
+									<p class="font-18 clr_purple">Discover Flight Passes</p>
+									<p>Save time and money with packages of one-way flightcredits that you can manage online with ease</p>
+									<div class="col-xs-12 space_margin_btm_20"></div>
+									<div class="row">
+										<form>
+										    <div class="col-md-6">
+											   <input type="text" class="form-control trip_input" placeholder="Province of residence">
+											</div>
+											<div class="col-md-6">
+												<button class="search_flight_btn">Shop for Flight Pass</button>
+											</div>
+										</form>
+									</div>
+								</div>
+							</div>
+						</div>
+						
+						
+						
+				</div>
+				
+				
+				
+			</div>
+	    <!-- tab block end -->
+      </div>
+	  
+	 </div>
+    </div>
+	
+	
+	
+    <div class="content-wrapper">
+      <div class="vistara-deals content-container">
+        <ul class="deals-list" id="deals_list">
+          <li class="active" data-target="#destinations">Destinations</li>
+          <li data-target="#vistara_experience">Vistara Experience</li>
+          <li data-target="#club_vistara">Club Vistara</li>
+          <li data-target="#deals_and_offers">Deals & Offers</li>
+          <li data-target="#news_and_updates">News & Updates</li>
+        </ul>
+        <div class="destinations deals-tab" id="destinations">
+          <div class="left-grid">
+            <p class="title">Vistara Deals from</p>
+            <select id="destination_list" class="destination-list select">
+              <option selected="selected">New Delhi</option>
+              <option>Bangalore</option>
+              <option>Pune</option>
+            </select>
+          </div>
+          <div class="right-grid">
+		    <p class="font-16 pull-right clr_prple">Filters <span class="filter_icon"></span></p>
+            <!-- carousel of destination deal -->
+            <div id="destination_deal_carousel" class="carousel destination-deal-carousel slide">
+              <!-- Wrapper for slides -->
+              <div class="carousel-inner" role="listbox">
+                <div class="item active">
+                  <div class="row no-margin margin-bottom">
+                    <div class="col-sm-3 col-xs-6 tile-padding mob_padd_right">
+                      <div class="tile-wrapper">
+                        <img src="img/destination-one.png" width="100%">
+                        <div class="tile-overlay">
+                          <p class="city-name font-16">Bengaluru</p>
+                          <p class="price font-14">From <span class="font-21 font-bold">&#x20b9; 2200*</span></p>
+                          <span class="icon-reveal"></span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-sm-3 col-xs-6 tile-padding mob_padd_left">
+                      <div class="tile-wrapper">
+                        <img src="img/destination-two.png" width="100%">
+                        <div class="tile-overlay">
+                          <p class="city-name font-16">Bengaluru</p>
+                          <p class="price font-14">From <span class="font-21 font-bold">&#x20b9; 2200*</span></p>
+                          <span class="icon-reveal"></span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-sm-6 tile-padding">
+                      <div class="tile-wrapper">
+                        <img src="img/destination-three.png" width="100%">
+                        <div class="tile-overlay">
+                          <p class="city-name font-16">Bengaluru</p>
+                          <p class="price font-14">From <span class="font-21 font-bold">&#x20b9; 2200*</span></p>
+                          <span class="icon-reveal"></span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row no-margin">
+                    <div class="col-sm-6 tile-padding">
+                      <div class="tile-wrapper">
+                        <img src="img/destination-four.png" width="100%">
+                        <div class="tile-overlay">
+                          <p class="city-name font-16">Bengaluru</p>
+                          <p class="price font-14">From <span class="font-21 font-bold">&#x20b9; 2200*</span></p>
+                          <span class="icon-reveal"></span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-sm-3 col-xs-6 tile-padding mob_padd_right">
+                      <div class="tile-wrapper">
+                        <img src="img/destination-five.png" width="100%">
+                        <div class="tile-overlay">
+                          <p class="city-name font-16">Bengaluru</p>
+                          <p class="price font-14">From <span class="font-21 font-bold">&#x20b9; 2200*</span></p>
+                          <span class="icon-reveal"></span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-sm-3 col-xs-6 tile-padding mob_padd_left">
+                      <div class="tile-wrapper">
+                        <img src="img/destination-six.png" width="100%">
+                        <div class="tile-overlay">
+                          <p class="city-name font-16">Bengaluru</p>
+                          <p class="price font-14">From <span class="font-21 font-bold">&#x20b9; 2200*</span></p>
+                          <span class="icon-reveal"></span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="item">
+                  <div class="row no-margin margin-bottom">
+                    <div class="col-sm-3 tile-padding">
+                      <div class="tile-wrapper">
+                        <img src="img/destination-one.png" width="100%">
+                        <div class="tile-overlay">
+                          <p class="city-name font-16">Bengaluru</p>
+                          <p class="price font-14">From <span class="font-21 font-bold">&#x20b9; 2200*</span></p>
+                          <span class="icon-reveal"></span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-sm-3 tile-padding">
+                      <div class="tile-wrapper">
+                        <img src="img/destination-two.png" width="100%">
+                        <div class="tile-overlay">
+                          <p class="city-name font-16">Bengaluru</p>
+                          <p class="price font-14">From <span class="font-21 font-bold">&#x20b9; 2200*</span></p>
+                          <span class="icon-reveal"></span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-sm-6 tile-padding">
+                      <div class="tile-wrapper">
+                        <img src="img/destination-three.png" width="100%">
+                        <div class="tile-overlay">
+                          <p class="city-name font-16">Bengaluru</p>
+                          <p class="price font-14">From <span class="font-21 font-bold">&#x20b9; 2200*</span></p>
+                          <span class="icon-reveal"></span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row no-margin">
+                    <div class="col-sm-6 tile-padding">
+                      <div class="tile-wrapper">
+                        <img src="img/destination-four.png" width="100%">
+                        <div class="tile-overlay">
+                          <p class="city-name font-16">Bengaluru</p>
+                          <p class="price font-14">From <span class="font-21 font-bold">&#x20b9; 2200*</span></p>
+                          <span class="icon-reveal"></span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-sm-3 tile-padding">
+                      <div class="tile-wrapper">
+                        <img src="img/destination-five.png" width="100%">
+                        <div class="tile-overlay">
+                          <p class="city-name font-16">Bengaluru</p>
+                          <p class="price font-14">From <span class="font-21 font-bold">&#x20b9; 2200*</span></p>
+                          <span class="icon-reveal"></span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-sm-3 tile-padding">
+                      <div class="tile-wrapper">
+                        <img src="img/destination-six.png" width="100%">
+                        <div class="tile-overlay">
+                          <p class="city-name font-16">Bengaluru</p>
+                          <p class="price font-14">From <span class="font-21 font-bold">&#x20b9; 2200*</span></p>
+                          <span class="icon-reveal"></span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Controls -->
+              <div class="next-prev-btn-list">
+                <a class="next-btn" href="#destination_deal_carousel" role="button" data-slide="prev"></a>
+                <a class="prev-btn" href="#destination_deal_carousel" role="button" data-slide="next"></a>
+              </div>
+            </div>
+            <!-- End Here -->
+          </div>
+        </div>
+        <div class="vistara-experience deals-tab hide" id="vistara_experience">
+          <div class="left-grid">
+            <ul class="vistara-experience-list list no-padding" id="vistara_experience_list">
+              <li><p>About Vistara</p></li>
+              <li><p>Onboard Experience</p></li>
+              <li><p>Check-in Experience</p></li>
+              <li><p>Inflight Dining</p></li>
+            </ul>
+          </div>
+          <div class="right-grid">
+            <div id="vistara_experience_carousel" class="carousel destination-deal-carousel slide">
+              <!-- Wrapper for slides -->
+              <div class="carousel-inner" role="listbox">
+                <div class="item active">
+                  <div class="row no-margin equal-height-col">
+                    <div class="col-sm-3 tile-padding">
+                      <div class="content-tile">
+                        <div class="tile-wrapper">
+                          <img src="img/on-board-exp.png">
+                          <div class="content">
+                            <h2 class="font-21">Onboard Experience</h2>
+                            <p class="font-12">
+                              Vistara offers  three distinct cabin classes to provide a personalised seamless service, which is thought-fully delievered.
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-sm-9 no-padding">
+                      <div class="row no-margin">
+                        <div class="col-sm-12 tile-padding margin-bottom">
+                          <div class="tile-wrapper">
+                            <img src="img/business-class.png" width="100%">
+                            <div class="tile-overlay">
+                              <p class="flight-class-name font-21">Business Class</p>
+                              <span class="icon-reveal"></span>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-sm-6 tile-padding">
+                          <div class="tile-wrapper">
+                            <img src="img/premium-economy-class.png" width="100%">
+                            <div class="tile-overlay">
+                              <p class="flight-class-name font-21">Premium Economy Class</p>
+                              <span class="icon-reveal"></span>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-sm-6 tile-padding">
+                          <div class="tile-wrapper">
+                            <img src="img/economy-class.png">
+                            <div class="tile-overlay">
+                              <p class="flight-class-name font-21">Economy Class</p>
+                              <span class="icon-reveal"></span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="item">
+                  <div class="row no-margin">
+                    <div class="col-sm-3 tile-padding">
+                      <div class="content-tile">
+                        <div class="tile-wrapper">
+                          <img src="img/on-board-exp.png">
+                          <div class="content">
+                            <h2 class="font-21">Onboard Experience</h2>
+                            <p class="font-12">
+                              Vistara offers  three distinct cabin classes to provide a personalised seamless service, which is thought-fully delievered.
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-sm-9 no-padding">
+                      <div class="row no-margin">
+                        <div class="col-sm-12 tile-padding margin-bottom">
+                          <div class="tile-wrapper">
+                            <img src="img/business-class.png">
+                            <div class="tile-overlay">
+                              <p class="flight-class-name font-21">Business Class</p>
+                              <span class="icon-reveal"></span>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-sm-6 tile-padding">
+                          <div class="tile-wrapper">
+                            <img src="img/premium-economy-class.png">
+                            <div class="tile-overlay">
+                              <p class="flight-class-name font-21">Premium Economy Class</p>
+                              <span class="icon-reveal"></span>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-sm-6 tile-padding">
+                          <div class="tile-wrapper">
+                            <img src="img/economy-class.png">
+                            <div class="tile-overlay">
+                              <p class="flight-class-name font-21">Economy Class</p>
+                              <span class="icon-reveal"></span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="next-prev-btn-list">
+                <a class="next-btn" href="#vistara_experience_carousel" role="button" data-slide="prev"></a>
+                <a class="prev-btn" href="#vistara_experience_carousel" role="button" data-slide="next"></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="club-vistara deals-tab hide" id="club_vistara">
+          <div class="left-grid">
+            <ul class="club-vistara-list list no-padding">
+              <li><p>About Club Vistara</p></li>
+              <li><p>My Account</p></li>
+              <li><p>Benefits of Club</p></li>
+              <li><p>Join Club Vistara</p></li>
+            </ul>
+          </div>
+          <div class="right-grid equal-height-col">
+            <div class="col-sm-9 no-padding">
+              <div class="row no-margin">
+                <div class="about-club-vistara col-sm-12 margin-bottom tile-padding">
+                  <div class="tile-wrapper">
+                    <img src="img/about-club-vistara.png">
+                    <div class="about-club-wrapper">
+                      <p class="font-18">About Club Vistara</p>
+                      <p class="strong">All new Club Vistara - The fastest rewarding frequent flyer program.</p>
+                      <p>Tailored for the trendsetters and the boardroom high fliers, The All New Club Vistara is The Fastest Rewarding Frequent Flyer Program.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-8 tile-padding">
+                  <div class="tile-wrapper">
+                    <img src="img/patnerships.png">
+                    <div class="tile-overlay">
+                      <p class="flight-class-name font-21">Business Class</p>
+                      <span class="icon-reveal"></span>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-4 tile-padding">
+                  <div class="tile-wrapper">
+                    <img src="img/enrol-now.png">
+                    <div class="tile-overlay">
+                      <p class="flight-class-name font-21">Business Class</p>
+                      <span class="icon-reveal"></span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-3 tile-padding">
+              <div class="tile-wrapper">
+                <img class="full-size" src="img/join-club-vistara.png">
+                <div class="tile-overlay">
+                  <p class="flight-class-name font-21">Business Class</p>
+                  <span class="icon-reveal"></span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="deals-and-offers deals-tab hide" id="deals_and_offers">
+          <div class="left-grid">
+            <ul class="club-vistara-list list no-padding">
+              <li><p>Boarding Pass Exclusives</p></li>
+              <li><p>Club Vistara Deals</p></li>
+              <li><p>Patnership Exclusives</p></li>
+            </ul>
+          </div>
+          <div class="right-grid">
+            <!-- Deals and offer carousel -->
+            <div id="deals_and_offers_carousel" class="carousel vistara-deal-carousel slide">
+              <!-- Wrapper for slides -->
+              <div class="carousel-inner" role="listbox">
+                <div class="item active">
+                  <div class="row no-margin margin-bottom">
+                    <div class="col-sm-6 tile-padding">
+                      <div class="tile-wrapper">
+                        <img src="img/deals-one.png">
+                        <div class="tile-overlay">
+                          <p class="deal-place font-18">Taj Swarna, Amritsar</p>
+                          <p class="deal-name font-16">25% off on Food & Bevarages</p>
+                          <span class="icon-reveal"></span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-sm-3 tile-padding">
+                      <div class="tile-wrapper">
+                        <img src="img/deals-two.png">
+                        <div class="tile-overlay">
+                          <p class="deal-place font-18">Taj Swarna, Amritsar</p>
+                          <p class="deal-name font-16">25% off on Food & Bevarages</p>
+                          <span class="icon-reveal"></span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-sm-3 tile-padding">
+                      <div class="tile-wrapper">
+                        <img src="img/deals-three.png">
+                        <div class="tile-overlay">
+                          <p class="deal-place font-18">Taj Swarna, Amritsar</p>
+                          <p class="deal-name font-16">25% off on Food & Bevarages</p>
+                          <span class="icon-reveal"></span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row no-margin">
+                    <div class="col-sm-3 tile-padding">
+                      <div class="tile-wrapper">
+                        <img src="img/deals-four.png">
+                        <div class="tile-overlay">
+                          <p class="deal-place font-18">Taj Swarna, Amritsar</p>
+                          <p class="deal-name font-16">25% off on Food & Bevarages</p>
+                          <span class="icon-reveal"></span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-sm-3 tile-padding">
+                      <div class="tile-wrapper">
+                        <img src="img/deals-five.png">
+                        <div class="tile-overlay">
+                          <p class="deal-place font-18">Taj Swarna, Amritsar</p>
+                          <p class="deal-name font-16">25% off on Food & Bevarages</p>
+                          <span class="icon-reveal"></span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-sm-6 tile-padding">
+                      <div class="tile-wrapper">
+                        <img src="img/deals-six.png">
+                        <div class="tile-overlay">
+                          <p class="deal-place font-18">Taj Swarna, Amritsar</p>
+                          <p class="deal-name font-16">25% off on Food & Bevarages</p>
+                          <span class="icon-reveal"></span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="item">
+                  <div class="row no-margin margin-bottom">
+                    <div class="col-sm-6 tile-padding">
+                      <div class="tile-wrapper">
+                        <img src="img/deals-one.png">
+                        <div class="tile-overlay">
+                          <p class="deal-place font-18">Taj Swarna, Amritsar</p>
+                          <p class="deal-name font-16">25% off on Food & Bevarages</p>
+                          <span class="icon-reveal"></span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-sm-3 tile-padding">
+                      <div class="tile-wrapper">
+                        <img src="img/deals-two.png">
+                        <div class="tile-overlay">
+                          <p class="deal-place font-18">Taj Swarna, Amritsar</p>
+                          <p class="deal-name font-16">25% off on Food & Bevarages</p>
+                          <span class="icon-reveal"></span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-sm-3 tile-padding">
+                      <div class="tile-wrapper">
+                        <img src="img/deals-three.png">
+                        <div class="tile-overlay">
+                          <p class="deal-place font-18">Taj Swarna, Amritsar</p>
+                          <p class="deal-name font-16">25% off on Food & Bevarages</p>
+                          <span class="icon-reveal"></span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row no-margin">
+                    <div class="col-sm-3 tile-padding">
+                      <div class="tile-wrapper">
+                        <img src="img/deals-four.png">
+                        <div class="tile-overlay">
+                          <p class="deal-place font-18">Taj Swarna, Amritsar</p>
+                          <p class="deal-name font-16">25% off on Food & Bevarages</p>
+                          <span class="icon-reveal"></span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-sm-3 tile-padding">
+                      <div class="tile-wrapper">
+                        <img src="img/deals-five.png">
+                        <div class="tile-overlay">
+                          <p class="deal-place font-18">Taj Swarna, Amritsar</p>
+                          <p class="deal-name font-16">25% off on Food & Bevarages</p>
+                          <span class="icon-reveal"></span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-sm-6 tile-padding">
+                      <div class="tile-wrapper">
+                        <img src="img/deals-six.png">
+                        <div class="tile-overlay">
+                          <p class="deal-place font-18">Taj Swarna, Amritsar</p>
+                          <p class="deal-name font-16">25% off on Food & Bevarages</p>
+                          <span class="icon-reveal"></span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Controls -->
+              <div class="next-prev-btn-list">
+                <a class="next-btn" href="#deals_and_offers_carousel" role="button" data-slide="prev"></a>
+                <a class="prev-btn" href="#deals_and_offers_carousel" role="button" data-slide="next"></a>
+              </div>
+            </div>
+            <!-- End Here -->
+          </div>
+        </div>
+        <div class="news-and-updates deals-tab hide" id="news_and_updates">
+          <div class="left-grid">
+            <p class="title">Select Duration</p>
+            <select id="duration-list" class="duration-list select">
+              <option selected="selected">Last 1 month</option>
+              <option>Last 2 months</option>
+              <option>Last 3 months</option>
+            </select>
+          </div>
+          <div class="right-grid">
+            <!-- carousel of news and updates -->
+            <div id="news_updates_carousel" class="carousel news-updates-carousel slide">
+              <!-- Wrapper for slides -->
+              <div class="carousel-inner" role="listbox">
+                <div class="item active">
+                  <div class="row no-margin margin-bottom">
+                    <div class="col-sm-6 tile-padding">
+                      <div class="tile-wrapper">
+                        <img src="img/news-updates-one.png">
+                        <div class="tile-overlay">
+                          <p class="font-16">Vistara announces India's Largest Aviation Hackathon</p>
+                          <span class="icon-reveal"></span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-sm-6 tile-padding">
+                      <div class="tile-wrapper">
+                        <img src="img/news-updates-two.png">
+                        <div class="tile-overlay">
+                          <p class="font-16">Japan Airlines and Vistara sign Memorendum of Understanding for Commercial Cooperation</p>
+                          <span class="icon-reveal"></span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row no-margin">
+                    <div class="col-sm-6 tile-padding">
+                      <div class="tile-wrapper">
+                        <img src="img/news-updates-three.png">
+                        <div class="tile-overlay">
+                          <p class="font-16">Vistara adds Ranchi as 21st destination in its expanding network</p>
+                          <span class="icon-reveal"></span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-sm-6 tile-padding">
+                      <div class="tile-wrapper">
+                        <img src="img/news-updates-four.png">
+                        <div class="tile-overlay">
+                          <p class="font-16">Singapore Airlines and SilkAir to COdeshare on Vistara flights</p>
+                          <span class="icon-reveal"></span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="item">
+                  <div class="row no-margin margin-bottom">
+                    <div class="col-sm-6 tile-padding">
+                      <div class="tile-wrapper">
+                        <img src="img/news-updates-one.png">
+                        <div class="tile-overlay">
+                          <p class="font-16">Vistara announces India's Largest Aviation Hackathon</p>
+                          <span class="icon-reveal"></span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-sm-6 tile-padding">
+                      <div class="tile-wrapper">
+                        <img src="img/news-updates-two.png">
+                        <div class="tile-overlay">
+                          <p class="font-16">Japan Airlines and Vistara sign Memorendum of Understanding for Commercial Cooperation</p>
+                          <span class="icon-reveal"></span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row no-margin">
+                    <div class="col-sm-6 tile-padding">
+                      <div class="tile-wrapper">
+                        <img src="img/news-updates-three.png">
+                        <div class="tile-overlay">
+                          <p class="font-16">Vistara adds Ranchi as 21st destination in its expanding network</p>
+                          <span class="icon-reveal"></span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-sm-6 tile-padding">
+                      <div class="tile-wrapper">
+                        <img src="img/news-updates-four.png">
+                        <div class="tile-overlay">
+                          <p class="font-16">Singapore Airlines and SilkAir to COdeshare on Vistara flights</p>
+                          <span class="icon-reveal"></span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Controls -->
+              <div class="next-prev-btn-list">
+                <a class="next-btn" href="#news_updates_carousel" role="button" data-slide="prev"></a>
+                <a class="prev-btn" href="#news_updates_carousel" role="button" data-slide="next"></a>
+              </div>
+            </div>
+            <!-- End Here -->
+          </div>
+        </div>
+      </div>
+      <div class="footer-container content-container">
+        <div class="clearfix">
+          <div class="col-sm-3 col-md-3 js-collapse-list">
+            <div class="footer-list-heading color-base-1">About Us<span class="collapse-icon-on-mobile abt_togle"></span></div>
+            <ul class="links-list hide-content no-padding js-collapse-content">
+              <li><a href="#">Company Info</a></li>
+              <li><a href="#">Terms and Conditions</a></li>
+              <li><a href="#">Press Kit</a></li>
+              <li><a href="#">Careers</a></li>
+              <li><a href="#">Charter Booking</a></li>
+              <li><a href="#">Privacy Policy</a></li>
+            </ul>
+          </div>
+          <div class="col-sm-3 col-md-3 js-collapse-list">
+            <div class="footer-list-heading color-base-1">Services<span class="collapse-icon-on-mobile svc_togle"></span></div>
+            <ul class="links-list hide-content no-padding js-collapse-content">
+              <li><a href="#">Company Info</a></li>
+              <li><a href="#">Terms and Conditions</a></li>
+              <li><a href="#">Press Kit</a></li>
+              <li><a href="#">Careers</a></li>
+              <li><a href="#">Charter Booking</a></li>
+              <li><a href="#">Privacy Policy</a></li>
+            </ul>
+          </div>
+          <div class="col-sm-3 col-md-3 js-collapse-list">
+            <div class="footer-list-heading color-base-1">Help<span class="collapse-icon-on-mobile help_togle"></span></div>
+            <ul class="links-list hide-content no-padding js-collapse-content">
+              <li><a href="#">Company Info</a></li>
+              <li><a href="#">Terms and Conditions</a></li>
+              <li><a href="#">Press Kit</a></li>
+              <li><a href="#">Careers</a></li>
+            </ul>
+          </div>
+          <div class="col-sm-3 col-md-3">
+            <div class="mobile-apps js-collapse-list">
+              <div class="footer-list-heading color-base-1">Mobile Apps<span class="collapse-icon-on-mobile mob_togle"></span></div>
+              <ul class="icon-list no-padding hide-content js-collapse-content">
+                <li><a href="#" class="icon apple-icon"></a></li>
+                <li><a href="#" class="icon android-icon"></a></li>
+              </ul>
+            </div>
+            <div class="follow-us js-collapse-list">
+              <div class="footer-list-heading color-base-1">Follow us<span class="collapse-icon-on-mobile flw_togle"></span></div>
+              <ul class="icon-list no-padding hide-content js-collapse-content">
+                <li><a href="#" class="icon facebook-icon"></a></li>
+                <li><a href="#" class="icon twitter-icon"></a></li>
+                <li><a href="#" class="icon instagram-icon"></a></li>
+                <li><a href="#" class="icon google-icon"></a></li>
+                <li><a href="#" class="icon youtube-icon"></a></li>
+                <li><a href="#" class="icon linkedin-icon"></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+	
+	
+	
+	
+	
+	
+	<!-- Passenger Modal -->
+	<div tabindex="-1" class="modal fade" id="passengerModal" role="dialog" aria-hidden="true" aria-labelledby="myModalLabel">
+	  <div class="modal-dialog passenger_modal">
+		<div class="modal-content">
+		  <div class="modal-header">
+			<button class="close" aria-hidden="true" type="button" data-dismiss="modal">×</button>
+			<h4 class="modal-title" id="myModalLabel">Passenger Details</h4>
+		  </div>
+		  <div class="modal-body clearfix">
+			<div class="col-xs-12 padd_0px">
+			
+			   <div class="col-md-4 padd_left_0px">
+			      <p class="font-18 title_margin_btm_34px clearfix">Passenger</p>
+				   <div class="col-xs-12 padd_left_0px margin_btm_34px">
+					    <span class="pull-left">
+						   <input type="text" class="adult" id="adult" value="1" /> Adult
+						</span>
+					    <span class="pull-right">
+						    <div class="btn-group passenger_btn_grp">
+							  <button type="button" class="btn minus_btn" id="subs">-</button>
+							  <button type="button" class="btn plus_btn" id="adds">+</button>
+							</div>
+						</span>
+					</div>
+					<div class="col-xs-12 padd_left_0px margin_btm_34px">
+					    <span class="pull-left">
+						   <input type="text" class="adult" id="child" value="0" /> Child <small class="secondary_txt">2-12 years</small>
+						</span>
+					    <span class="pull-right">
+						    <div class="btn-group passenger_btn_grp">
+							  <button type="button" class="btn minus_btn" id="subs_child">-</button>
+							  <button type="button" class="btn plus_btn" id="adds_child">+</button>
+							</div>
+						</span>
+					</div>
+					<div class="col-xs-12 padd_left_0px margin_btm_34px">
+					    <span class="pull-left">
+						   <input type="text" class="adult" id="infant" value="0" /> Infant <small class="secondary_txt">Below 2 years</small>
+						</span>
+					    <span class="pull-right">
+						    <div class="btn-group passenger_btn_grp">
+							  <button type="button" class="btn minus_btn" id="subs_infant">-</button>
+							  <button type="button" class="btn plus_btn" id="adds_infant">+</button>
+							</div>
+						</span>
+					</div>
+			   </div>
+			   
+			   <div class="col-md-4 bdr_left">
+			        <p class="font-18 title_margin_btm_34px">Travel Class</p>
+			        <div>
+					   <button class="eco_btn">Economy</button>
+					</div>
+					<div>
+					   <button class="pre_btn">Premium Economy</button>
+					</div>
+					<div>
+					   <button class="bu_btn">Business</button>
+					</div>
+			   </div>
+			   
+			   <div class="col-md-4 bdr_left">
+			        <p class="font-18 title_margin_btm_34px">Discount Type</p>
+				    <div class="radio discount_radio_margin">
+						<label>
+							<input type="radio" name="status" value="">
+							<span class="cr"><i class="cr-icon fa fa-circle"></i></span>
+							None
+						</label>
+					</div>
+					<div class="radio discount_radio_margin">
+						<label>
+							<input type="radio" name="status" value="">
+							<span class="cr"><i class="cr-icon fa fa-circle"></i></span>
+							Student
+						</label>
+					</div>
+					<div class="radio discount_radio_margin">
+						<label>
+							<input type="radio" name="status" value="">
+							<span class="cr"><i class="cr-icon fa fa-circle"></i></span>
+							Indian armed forces personnel
+						</label>
+					</div>
+					<div class="radio discount_radio_margin">
+						<label>
+							<input type="radio" name="status" value="">
+							<span class="cr"><i class="cr-icon fa fa-circle"></i></span>
+							Senior citizen
+						</label>
+					</div>
+					<div class="radio discount_radio_margin">
+						<label>
+							<input type="radio" name="status" value="">
+							<span class="cr"><i class="cr-icon fa fa-circle"></i></span>
+							Friends and family
+						</label>
+					</div>
+			   </div>
+			</div>
+		  </div>
+		  <div class="modal-footer">
+			<div class="col-sm-3 pull-right">
+				<button class="done_btn" data-dismiss="modal">Done</button>
+			</div>
+		  </div>
+		</div><!-- /.modal-content -->
+	  </div><!-- /.modal-dialog -->
+	</div><!-- /.modal -->
+	
+	
+	
+	
+	<!--Depart Calender Modal -->
+	  <div class="modal fade" id="departModal" role="dialog">
+		<div class="modal-dialog depart_modal">
+		
+		  <!-- Modal content-->
+		  <div class="modal-content">
+			<div class="modal-header">
+			<button class="close" aria-hidden="true" type="button" data-dismiss="modal">×</button>
+				<h4 class="modal-title" id="myModalLabel">Depart Date</h4>
+			</div>
+			<div class="modal-body clearfix">
+			    <div class="col-xs-12">
+					<div class="clearfix">Show flexible dates&nbsp;
+						<div class="btn-group">
+						  <button type="button" class="btn trip_btn round">Yes</button>
+						  <button type="button" class="btn trip_btn one">No</button>
+						</div>
+					</div>
+				</div>
+				<div class="col-xs-12 padd_0px">
+					  <div type="text" id="datepicker"></div>
+			    </div>
+				<div class="modal-footer">
+			        <div class="col-sm-3 pull-right">
+				        <button onclick="showdate();" class="done_btn" data-dismiss="modal">Done</button>
+			        </div>
+		        </div>
+			</div>
+		  </div>
+		  
+		</div>
+	  </div>
+	  
+	  
+	  
+	  <!--Return Calender Modal -->
+	  <div class="modal fade" id="returnModal" role="dialog">
+		<div class="modal-dialog depart_modal">
+		
+		  <!-- Modal content-->
+		  <div class="modal-content">
+			<div class="modal-header">
+			<button class="close" aria-hidden="true" type="button" data-dismiss="modal">×</button>
+				<h4 class="modal-title" id="myModalLabel">Return Date</h4>
+			</div>
+			<div class="modal-body clearfix">
+			    <div class="col-xs-12">
+					<div class="clearfix">Show flexible dates&nbsp;
+						<div class="btn-group">
+						  <button type="button" class="btn trip_btn round">Yes</button>
+						  <button type="button" class="btn trip_btn one">No</button>
+						</div>
+					</div>
+				</div>
+				<div class="col-xs-12 padd_0px">
+					  <div type="text" id="datepicker1"></div>
+			    </div>
+				<div class="modal-footer">
+			        <div class="col-sm-3 pull-right">
+				        <button onclick="showdate1();" class="done_btn" data-dismiss="modal">Done</button>
+			        </div>
+		        </div>
+			</div>
+		  </div>
+		  
+		</div>
+	  </div>
+	
+	
+	 
+	
+  <script src="js/vendor/jquery-3.2.1.js"></script>
+  <script src="js/vendor/jquery_custom_scrollbar/jquery.mCustomScrollbar.concat.min.js" type="text/javascript"></script>
+  <script src="js/vendor/bootstrap.min.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/jquery-ui-modified.js"></script>
+  
+  
+  <!--Depart calender script-->
+  <script>
+  $( function() {
+    datepickerElem = $( "#datepicker" );
+    datepickerElem.datepicker({
+      changeMonth: true,
+      changeYear: true,
+      dateFormat: 'dd-mm-yy'
+    });
+  } );
+  var datepickerElem;
+  function showdate() {
+      // console.log(datepickerElem.datepicker('getDate'));
+      var selectedDate = new Date(datepickerElem.datepicker('getDate'));
+      var month = selectedDate.getMonth() + 1;
+      var depart = selectedDate.getDate() + '/' + ( month < 10 ? '0' + month : month ) + '/' + selectedDate.getFullYear();
+	  document.getElementById("depart").value = depart;
+    }
+  </script>
+  
+
+  
+  <!--Return calender script-->
+  <script>
+  $( function() {
+    datepickerElem1 = $( "#datepicker1" );
+    datepickerElem1.datepicker({
+      changeMonth: true,
+      changeYear: true,
+      dateFormat: 'dd-mm-yy'
+    });
+  } );
+  var datepickerElem1;
+  function showdate1() {
+      // console.log(datepickerElem.datepicker('getDate'));
+      var selectedDate = new Date(datepickerElem1.datepicker('getDate'));
+      var month = selectedDate.getMonth() + 1;
+      var retrn = selectedDate.getDate() + '/' + ( month < 10 ? '0' + month : month ) + '/' + selectedDate.getFullYear();
+	  document.getElementById("return").value = retrn;
+    }
+  </script>
+  
+  
+  <script>
+     $(".flight").click(function(){
+	    $("#flight_icon_change").removeClass("hotel_icon ").addClass("flight_icon_active");
+		$("#hotel_icon_change").addClass("hotel_icon ").removeClass("hotel_icon_active");
+		$("#car_icon_change").addClass("car_icon ").removeClass("car_icon_active");
+		$("#gateaway_icon_change").addClass("gateaway_icon ").removeClass("gateaway_icon_active");
+		$("#passes_icon_change").addClass("passes_icon ").removeClass("passes_icon_active");
+		$("#checkin_icon_change").addClass("checkin_icon ").removeClass("checkin_icon_active");
+		$("#status_icon_change").addClass("status_icon ").removeClass("status_icon_active");
+		$("#book_icon_change").addClass("my_booking_icon ").removeClass("my_booking_icon_active");
+		$(".tab_link").css("background","#c6a267")
+	 })
+     $(".hotel").click(function(){
+	    $("#hotel_icon_change").removeClass("hotel_icon ").addClass("hotel_icon_active");
+		$("#car_icon_change").addClass("car_icon ").removeClass("car_icon_active");
+		$("#gateaway_icon_change").addClass("gateaway_icon ").removeClass("gateaway_icon_active");
+		$("#passes_icon_change").addClass("passes_icon ").removeClass("passes_icon_active");
+		$("#checkin_icon_change").addClass("checkin_icon ").removeClass("checkin_icon_active");
+		$("#status_icon_change").addClass("status_icon ").removeClass("status_icon_active");
+		$("#book_icon_change").addClass("my_booking_icon ").removeClass("my_booking_icon_active");
+		$("#flight_icon_change").addClass("flight_icon ").removeClass("flight_icon_active");
+	 })
+	 $(".car").click(function(){
+	    $("#car_icon_change").removeClass("car_icon ").addClass("car_icon_active");
+		$("#gateaway_icon_change").addClass("gateaway_icon ").removeClass("gateaway_icon_active");
+		$("#passes_icon_change").addClass("passes_icon ").removeClass("passes_icon_active");
+		$("#checkin_icon_change").addClass("checkin_icon ").removeClass("checkin_icon_active");
+		$("#status_icon_change").addClass("status_icon ").removeClass("status_icon_active");
+		$("#book_icon_change").addClass("my_booking_icon ").removeClass("my_booking_icon_active");
+		$("#hotel_icon_change").addClass("hotel_icon ").removeClass("hotel_icon_active");
+		$("#flight_icon_change").addClass("flight_icon ").removeClass("flight_icon_active");
+	 })
+	 $(".gateaway").click(function(){
+	    $("#gateaway_icon_change").removeClass("gateaway_icon ").addClass("gateaway_icon_active");
+		$("#passes_icon_change").addClass("passes_icon ").removeClass("passes_icon_active");
+		$("#checkin_icon_change").addClass("checkin_icon ").removeClass("checkin_icon_active");
+		$("#status_icon_change").addClass("status_icon ").removeClass("status_icon_active");
+		$("#book_icon_change").addClass("my_booking_icon ").removeClass("my_booking_icon_active");
+		$("#car_icon_change").addClass("car_icon ").removeClass("car_icon_active");
+		$("#hotel_icon_change").addClass("hotel_icon ").removeClass("hotel_icon_active");
+		$("#flight_icon_change").addClass("flight_icon ").removeClass("flight_icon_active");
+	 })
+	 $(".book").click(function(){
+	    $("#book_icon_change").removeClass("my_booking_icon ").addClass("my_booking_icon_active");
+		$("#passes_icon_change").removeClass("passes_icon ").addClass("passes_icon_active");
+		$("#checkin_icon_change").addClass("checkin_icon ").removeClass("checkin_icon_active");
+		$("#status_icon_change").addClass("status_icon ").removeClass("status_icon_active");
+		$("#gateaway_icon_change").addClass("gateaway_icon ").removeClass("gateaway_icon_active");
+		$("#car_icon_change").addClass("car_icon ").removeClass("car_icon_active");
+		$("#hotel_icon_change").addClass("hotel_icon ").removeClass("hotel_icon_active");
+		$("#flight_icon_change").addClass("flight_icon ").removeClass("flight_icon_active");
+		$(".tab_link").css("background","#c6a267")
+	 })
+	 $(".status").click(function(){
+	    $("#status_icon_change").removeClass("status_icon ").addClass("status_icon_active");
+		$("#checkin_icon_change").addClass("checkin_icon ").removeClass("checkin_icon_active");
+		$("#book_icon_change").addClass("my_booking_icon ").removeClass("my_booking_icon_active");
+		$("#gateaway_icon_change").addClass("gateaway_icon ").removeClass("gateaway_icon_active");
+		$("#car_icon_change").addClass("car_icon ").removeClass("car_icon_active");
+		$("#hotel_icon_change").addClass("hotel_icon ").removeClass("hotel_icon_active");
+		$("#flight_icon_change").addClass("flight_icon ").removeClass("flight_icon_active");
+		$("#passes_icon_change").addClass("passes_icon ").removeClass("passes_icon_active");
+		$(".tab_link").css("background","#ffffff")
+	 })
+	 $(".checkin").click(function(){
+	    $("#checkin_icon_change").removeClass("checkin_icon ").addClass("checkin_icon_active");
+		$("#passes_icon_change").addClass("passes_icon ").removeClass("passes_icon_active");
+		$("#status_icon_change").addClass("status_icon ").removeClass("status_icon_active");
+		$("#book_icon_change").addClass("my_booking_icon ").removeClass("my_booking_icon_active");
+		$("#gateaway_icon_change").addClass("gateaway_icon ").removeClass("gateaway_icon_active");
+		$("#car_icon_change").addClass("car_icon ").removeClass("car_icon_active");
+		$("#hotel_icon_change").addClass("hotel_icon ").removeClass("hotel_icon_active");
+		$("#flight_icon_change").addClass("flight_icon ").removeClass("flight_icon_active");
+		$(".tab_link").css("background","#c6a267")
+	 })
+	 $(".passes").click(function(){
+	    $("#passes_icon_change").removeClass("passes_icon ").addClass("passes_icon_active");
+		$("#checkin_icon_change").addClass("checkin_icon ").removeClass("checkin_icon_active");
+		$("#status_icon_change").addClass("status_icon ").removeClass("status_icon_active");
+		$("#book_icon_change").addClass("my_booking_icon ").removeClass("my_booking_icon_active");
+		$("#gateaway_icon_change").addClass("gateaway_icon ").removeClass("gateaway_icon_active");
+		$("#car_icon_change").addClass("car_icon ").removeClass("car_icon_active");
+		$("#hotel_icon_change").addClass("hotel_icon ").removeClass("hotel_icon_active");
+		$("#flight_icon_change").addClass("flight_icon ").removeClass("flight_icon_active");
+	 })
+	 
+	
+	 
+	 
+	 $(".round").click(function(){
+	    $(".round").addClass("trip_option");
+		$(".one").removeClass("trip_option");
+	 })
+	 $(".one").click(function(){
+	    $(".one").addClass("trip_option");
+		$(".round").removeClass("trip_option");
+	 })
+	 
+	 $(".eco_btn").click(function(){
+	    $(".eco_btn").addClass("clk_travel_cls_btn");
+		$(".pre_btn").removeClass("clk_travel_cls_btn");
+		$(".bu_btn").removeClass("clk_travel_cls_btn");
+	 })
+	 $(".pre_btn").click(function(){
+	    $(".pre_btn").addClass("clk_travel_cls_btn");
+		$(".eco_btn").removeClass("clk_travel_cls_btn");
+		$(".bu_btn").removeClass("clk_travel_cls_btn");
+	 })
+	 $(".bu_btn").click(function(){
+	    $(".bu_btn").addClass("clk_travel_cls_btn");
+		$(".pre_btn").removeClass("clk_travel_cls_btn");
+		$(".eco_btn").removeClass("clk_travel_cls_btn");
+	 })
+	 
+	 
+	 $('#adds').click(function add() {
+		var $rooms = $("#adult");
+		var a = $rooms.val();
+		a++;
+		$("#subs").prop("disabled", !a);
+		$rooms.val(a);
+		});
+		$("#subs").prop("disabled", !$("#adult").val());
+
+		$('#subs').click(function subst() {
+			var $rooms = $("#adult");
+			var b = $rooms.val();
+			if (b >= 1) {
+				b--;
+				$rooms.val(b);
+			}
+			else {
+				$("#subs").prop("disabled", true);
+			}
+	});
+	
+	
+	$('#adds_child').click(function add() {
+		var $rooms = $("#child");
+		var a = $rooms.val();
+		a++;
+		$("#subs_child").prop("disabled", !a);
+		$rooms.val(a);
+		});
+		$("#subs_child").prop("disabled", !$("#child").val());
+
+		$('#subs_child').click(function subst() {
+			var $rooms = $("#child");
+			var b = $rooms.val();
+			if (b >= 1) {
+				b--;
+				$rooms.val(b);
+			}
+			else {
+				$("#subs_child").prop("disabled", true);
+			}
+	});
+	
+	
+	$('#adds_infant').click(function add() {
+		var $rooms = $("#infant");
+		var a = $rooms.val();
+		a++;
+		$("#subs_infant").prop("disabled", !a);
+		$rooms.val(a);
+		});
+		$("#subs_infant").prop("disabled", !$("#infant").val());
+
+		$('#subs_infant').click(function subst() {
+			var $rooms = $("#infant");
+			var b = $rooms.val();
+			if (b >= 1) {
+				b--;
+				$rooms.val(b);
+			}
+			else {
+				$("#subs_infant").prop("disabled", true);
+			}
+	});
+	
+	
+	
+	$("#within_city").click(function(){
+	   $(".within_city").removeClass("blk_hidden");
+	   $(".airport").addClass("blk_hidden");
+	   $(".outstation").addClass("blk_hidden");
+	   $(".one_way").addClass("blk_hidden");
+	})
+	$("#airport").click(function(){
+	   $(".airport").removeClass("blk_hidden");
+	   $(".within_city").addClass("blk_hidden");
+	   $(".outstation").addClass("blk_hidden");
+	   $(".one_way").addClass("blk_hidden");
+	})
+	$("#outstation").click(function(){
+	   $(".outstation").removeClass("blk_hidden");
+	   $(".airport").addClass("blk_hidden");
+	   $(".within_city").addClass("blk_hidden");
+	   $(".one_way").addClass("blk_hidden");
+	})
+	$("#one_way").click(function(){
+	   $(".one_way").removeClass("blk_hidden");
+	   $(".outstation").addClass("blk_hidden");
+	   $(".airport").addClass("blk_hidden");
+	   $(".within_city").addClass("blk_hidden");
+	})
+	
+	
+	
+	
+	$(".footer-list-heading").click(function(){
+	  $(".abt_togle").toggleClass("footer-list-heading-toggle");
+	})
+	
+	$(".footer-list-heading").click(function(){
+	  $(".svc_togle").toggleClass("footer-list-heading-toggle");
+	})
+	
+	$(".footer-list-heading").click(function(){
+	  $(".help_togle").toggleClass("footer-list-heading-toggle");
+	})
+	
+	$(".footer-list-heading").click(function(){
+	  $(".mob_togle").toggleClass("footer-list-heading-toggle");
+	})
+	
+	$(".footer-list-heading").click(function(){
+	  $(".flw_togle").toggleClass("footer-list-heading-toggle");
+	})
+	
+	
+	$('#pauseButton').click(function () {
+		$(this).toggleClass('play-carousel');
+	});
+	
+	$(function () {
+    $('#homeCarousel').carousel({
+        pause: "false"
+    });
+   
+   
+   
+   // carasuel stop
+	$('#pauseButton').click(function () {
+	if($(this).hasClass('ctrl_pause')){
+		$(this).removeClass('ctrl_pause');
+		   $('#homeCarousel').carousel('cycle');
+		}
+		else{
+		$(this).addClass('ctrl_pause');
+		   $('#homeCarousel').carousel('pause');
+		}
+	});
+	});
+	 
+	 
+	
+	
+	
+  </script>
+  </body>
+</html>

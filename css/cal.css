@@ -1,0 +1,194 @@
+    
+.ui-widget{
+  width:100%; height:auto;
+  font:12px/1 Arial;
+  border-radius:10px;
+  position:relative;
+	z-index:10;
+}
+.ui-widget:before, .ui-widget:after{
+	content:""; 
+	display:block;
+	height:100%; 
+	position:absolute;
+	border-radius:10px;
+}
+/*.ui-widget:before{ 
+	width:98%;  
+	top:5px; left:3px; 
+	z-index:-10; 	
+}
+.ui-widget:after{
+	width:96%; 
+	top:10px; left:6px; 
+	z-index:-20; 
+}*/
+
+/*.ui-widget:before{ 
+	width:0%;  
+	top:0; left:0; 
+	z-index:-10; 	
+}
+.ui-widget:after{
+	width:0%; 
+	top:0; left:0; 
+	z-index:-20; 
+}*/
+.ui-widget a {
+	text-decoration: none;
+	font-size:14px;
+}
+.ui-datepicker table{
+	width:100%;
+}
+.ui-datepicker-header{
+	width:35%;
+	color:#EFDEB7;
+	overflow:hidden;
+	float: left;
+	padding: 0px 5px;
+    box-sizing: border-box;
+}
+.ui-datepicker-title {
+	text-align:center; 
+	font-size: 20px; 
+	
+}
+.ui-datepicker-year{
+	color: #C59070;
+    text-align: left;
+    margin: 20px 0px;
+}
+    .ui-datepicker-prev, .ui-datepicker-next {  
+        display: inline-block;  
+        width: 30px;  
+        height: 30px;  
+        text-align: center;  
+        cursor: pointer;  
+        margin-top:20px;
+
+    } 
+    .ui-icon{
+    	display:none;
+    }
+    .ui-datepicker-prev {  
+        float: left; 
+        margin-left:15px;  
+    }  
+    .ui-datepicker-next {  
+        float:right; 
+        margin-right:15px; 
+    }  
+    /*.ui-datepicker-next:before{
+      content:"►"; color:#440B05;font-size:16px!important;
+    }
+    .ui-datepicker-prev:before{
+    	content:"◄"; color:#440B05;font-size:16px!important;
+    }*/
+    /*thead{
+    	background: linear-gradient(#D2D2D2,#868686);  
+    	height:30px; 
+    	box-shadow: 0 1px 2px 1px #6F6961;
+    }*/
+	thead{
+    	background: #ffffff;  
+    	height:50px; 
+    	box-shadow: 0 0 0 0 #ffffff;
+		border: 0px;
+		}
+    thead  th{
+    	text-transform:uppercase; 
+    	color:#535252; 
+    	font-size:12px;
+		text-align: center;
+    }
+    
+  .ui-datepicker-calendar{
+   
+    background-size:100%;
+   	border-radius: 0 0 10px 10px;
+   	border-collapse: collapse;/*removes default spacing between cells*/
+   	font-weight:bold;
+   	
+   }
+   .ui-datepicker table {
+    width: 65%;
+    float: left;
+}
+td, td a{
+    	padding: 5px 0px!important;
+    	text-align: center; 
+    	font-family:arial;
+		margin: 0px 15px;
+    }
+	
+	
+	
+	.ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default, .ui-button, html .ui-button.ui-state-disabled:hover, html .ui-button.ui-state-disabled:active {
+    border: 1px solid rgba(197, 197, 197, 0);
+    background: #ffffff;
+    font-weight: normal;
+    color: #454545;
+}
+   td a.ui-state-default{
+   	color:#655B4A;
+	text-align: center;
+   }
+   .ui-widget-header {
+    border: 1px solid #ffffff;
+    background: #ffffff;
+    color: #333333;
+    font-weight: bold;
+}
+
+
+
+.ui-widget.ui-widget-content {
+    border: 1px solid #ffffff;
+}
+
+
+.ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default, .ui-button, html .ui-button.ui-state-disabled:hover, html .ui-button.ui-state-disabled:active {
+    border: 1px solid rgba(197, 197, 197, 0);
+    background: #ffffff;
+    font-weight: normal;
+    color: #454545;
+    text-align: center;
+}
+.ui-state-disabled, .ui-widget-content .ui-state-disabled, .ui-widget-header .ui-state-disabled {
+    opacity: .35;
+    filter: Alpha(Opacity=35);
+    background-image: none;
+    vertical-align: top;
+	font-size: 12px;
+}
+
+
+   .ui-state-disabled{
+   	color:#A89F90 !important;
+   }
+   a.ui-state-active{
+	  background: rgba(106, 69, 98, 0.25)!important;
+      color: #000000!important;
+      text-align: center!important;
+   }
+   
+   
+table.ui-datepicker-calendar tbody td.highlight > a {
+  line-height:40px;
+  display:block;
+  background: url("https://media-cache-ec4.pinterest.com/upload/276830708316411430_2hONwsBf.jpg") 10px 28px no-repeat;
+}
+
+
+@media(max-width: 736px){
+  .ui-datepicker-header {
+    width: 80%;
+	margin-left: -20px;
+   }
+   .ui-datepicker table {
+    width: 65%;
+    float: left;
+    margin-left: -20px;
+}
+}
