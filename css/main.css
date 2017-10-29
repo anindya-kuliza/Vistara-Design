@@ -1,5 +1,26 @@
 /* @css for vistara home
 */
+/* Date Picker css */
+.btncls{
+    background-color:#B80C4D;
+    border: #2e6da4;
+  	font-family: Arial, Geneva, Arial, Helvetica,  sans-serif;
+	font-size: 15px;
+    color: #fff;
+    letter-spacing: 1px;
+    padding: 8px 12px;
+    font-size: 14px;
+    font-weight: normal;
+    
+    border-radius: 4px;
+    line-height: 1.5;
+    text-decoration:none;
+}
+#Datepickk .d-table input + label::before {
+    background-color: #6a4562!important;
+}
+/* End of Date Picker css */
+
 .home-banner .carousel-indicators .indicator-icon {
 	/* background: url('../img/sprite.png') no-repeat -256px -115px; */
 	background: #fff;
@@ -1677,6 +1698,8 @@ select {
 		display: inline-block;
 		margin-bottom: 0;
 	}
+	.deals-tab .next-prev-btn-list .next-btn{float: right;}
+    .deals-tab .next-prev-btn-list .prev-btn {float: left;}
 	.content-wrapper .footer-container {
 		padding-left: 0;
 		/*border-top: 1px solid #ffffff;*/
@@ -1710,10 +1733,13 @@ select {
 		flex: none;
 		width: 100%;
 	}
-	.deals-tab .next-prev-btn-list {
-		position: relative;
-		left: 0;
-		top: 18px;
+	.deals-tab .next-prev-btn-list {		
+    position: relative;
+    left: 0;
+    top: 18px;
+    width: 110px;
+    margin: auto;
+    max-width: 360px;
 	}
 	.checkin_bg {
 		position: absolute;
@@ -1775,8 +1801,14 @@ select {
 		display: block;
 		text-align: center;
 	}
+	.booking-content .secondary_blk{
+	  text-align: left!important;
+	}
 	.mob_inline_blk{
 	  display: inline-block;
+	}
+	.booking-content .mob_inline_blk{
+	  display: block!important;
 	}
 	.mob_mar_top_15px{
 	   margin-top: 15px;

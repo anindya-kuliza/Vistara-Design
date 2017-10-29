@@ -17,6 +17,8 @@
     <link rel="stylesheet" href="css/main.css">
 	<link rel="stylesheet" href="css/cal.css">
     <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+	<link rel="stylesheet" href="css/datepickk.min.css">
+    <script src="js/datepickk.min.js"></script>
 
     <!-- Navigation Bar addition -->
     <link rel="stylesheet" type="text/css" href="css/navigation_bar.css">
@@ -574,13 +576,15 @@
 									</select>
 									<span class="location_icon"></span>
 								</div>
-								<div class="col-md-3 col-sm-6">
-								    <input type="text" class="form-control trip_input" id="depart" placeholder="Depart">
-									<span class="calender_icon" data-target="#departModal" data-toggle="modal"></span>
+								<div class="col-md-3 col-sm-6" id="closeOnClick" onclick="closeOnClickDemo()">
+								    <input type="text" class="form-control trip_input" id="datedemo" placeholder="Depart"> 									
+									<span class="calender_icon"  ></span>									
 								</div>
-								<div class="col-md-3 col-sm-6">
-									<input type="text" class="form-control trip_input" id="return" placeholder="Return">
-									<span class="calender_icon" data-target="#returnModal" data-toggle="modal"></span>
+								
+								
+								<div class="col-md-3 col-sm-6" id="closeOnClick2" onclick="closeOnClickDemo2()">
+								    <input type="text" class="form-control trip_input" id="datedemo2" placeholder="Return"> 									
+									<span class="calender_icon"  ></span>									
 								</div>
 							</div>
 							</div>
@@ -629,13 +633,21 @@
 									</select>
 									<span class="location_icon"></span>
 								</div>
-								<div class="col-md-3 col-sm-6">
+								<!-- <div class="col-md-3 col-sm-6">
 								    <input type="text" class="form-control trip_input" placeholder="Check-In date">
 									<span class="calender_icon"></span>
+								</div> -->
+								<div class="col-md-3 col-sm-6" id="closeOnClick3" onclick="closeOnClickDemo3()">
+								    <input type="text" class="form-control trip_input" id="datedemo3" placeholder="Check-In date"> 									
+									<span class="calender_icon"  ></span>									
 								</div>
-								<div class="col-md-3 col-sm-6">
+								<!-- <div class="col-md-3 col-sm-6">
 								   <input type="text" class="form-control trip_input" placeholder="Check-Out date">
 									<span class="calender_icon"></span>
+								</div> -->
+								<div class="col-md-3 col-sm-6" id="closeOnClick4" onclick="closeOnClickDemo4()">
+								    <input type="text" class="form-control trip_input" id="datedemo4" placeholder="Check-Out date"> 									
+									<span class="calender_icon"  ></span>									
 								</div>
 								<div class="col-md-3 col-sm-6">
 									<button class="search_flight_btn">Search Hotel</button>
@@ -683,16 +695,16 @@
 													<input type="text" class="form-control trip_input" placeholder="Delivery address">
 													<span class="location_icon"></span>
 												</div>
-												<div class="col-md-3 col-sm-6">
-												   <input type="text" class="form-control trip_input" placeholder="Start date">
-													<!-- <span class="calender_icon"></span> -->
-													<span class="calender_icon" data-target="#startDate" data-toggle="modal"></span>
-												</div>
-												<div class="col-md-3 col-sm-6">
-													<input type="text" class="form-control trip_input" placeholder="End date">
-													<!-- <span class="calender_icon"></span> -->
-													<span class="calender_icon" data-target="#endDate" data-toggle="modal"></span>
-												</div>
+												
+												<div class="col-md-3 col-sm-6" id="closeOnClick5" onclick="closeOnClickDemo5()">
+								                  <input type="text" class="form-control trip_input" id="datedemo5" placeholder="Start date"> 									
+									              <span class="calender_icon"  ></span>									
+								                </div>
+												
+												<div class="col-md-3 col-sm-6" id="closeOnClick6" onclick="closeOnClickDemo6()">
+								                  <input type="text" class="form-control trip_input" id="datedemo6" placeholder="End date"> 									
+									              <span class="calender_icon"  ></span>									
+								                </div>
 											</div>
 											
 											<div class="col-xs-12 space_margin_btm_20"></div>
@@ -932,10 +944,11 @@
 										</select>
 										<span class="location_icon"></span>
 									</div>
-									<div class="col-md-3 col-sm-6">
-										<input type="text" class="form-control trip_input" placeholder="Select date">
-										<span class="calender_icon"></span>
-									</div>
+									
+									<div class="col-md-3 col-sm-6" id="closeOnClick7" onclick="closeOnClickDemo7()">
+								       <input type="text" class="form-control trip_input" id="datedemo7" placeholder="Select date"> 									
+									   <span class="calender_icon"  ></span>									
+								    </div>
 								</div>
 							</div>
 							
@@ -995,7 +1008,7 @@
 							</div>
 							
 							
-							<div class="col-xs-12 show_in_mob">
+							<div class="col-xs-12 show_in_mob booking-content">
 								<div class="col-xs-12">
 									<div class="row">
 										<div class="col-xs-6 mob_padd_right padd_0px">
@@ -1020,7 +1033,8 @@
 											<a href="#" class="secondary_blk">
 												<span class="mob_inline_blk">
 													<span class="gateaway_icon secondary_blk_icon"></span>
-													<span>Gateaways</span>
+													<span id="showin-desk">Gateaways</span>
+													<span id="showin-mobile">Gate...</span>
 												</span>
 											</a>
 										</div>
@@ -1028,7 +1042,8 @@
 											<a href="#" class="secondary_blk">
 												<span class="mob_inline_blk">
 													<span class="passes_icon secondary_blk_icon"></span>
-													<span>Flight Passes</span>
+													<span id="showin-desk">Flight Passes</span>
+													<span id="showin-mobile">Flight...</span>
 												</span>
 											</a>
 										</div>
@@ -1087,10 +1102,14 @@
 										</select>
 										<span class="location_icon"></span>
 									</div>
-									<div class="col-md-3 col-sm-6">
+									<!-- <div class="col-md-3 col-sm-6">
 									   <input type="text" class="form-control trip_input" placeholder="Flight date">
 										<span class="calender_icon"></span>
-									</div>
+									</div> -->
+									<div class="col-md-3 col-sm-6" id="closeOnClick8" onclick="closeOnClickDemo8()">
+								    <input type="text" class="form-control trip_input" id="datedemo8" placeholder="Flight date"> 									
+									<span class="calender_icon"  ></span>									
+								   </div>
 									<div class="col-md-3 col-sm-6">
 										<button class="search_flight_btn">Search Hotel</button>
 									</div>
@@ -2363,5 +2382,184 @@
 	
 	
   </script>
+   <!--Depart calender script original-->
+   <script>
+	var datepicker = new Datepickk();
+  </script>
+  <script>
+					function closeOnClickDemo(){
+						datepicker.unselectAll();
+						datepicker.closeOnClick = false;
+						datepicker.button = 'Done';
+						datepicker.onSelect = function(checked){
+                            document.getElementById("datedemo").value = this.toLocaleDateString();
+						};
+						datepicker.onClose = function(){
+							datepicker.closeOnClick = true;
+							datepicker.button = null;
+							datepicker.onClose = null;
+						}
+						datepicker.show();
+                    }
+                    
+   </script>
+   
+   <!--Return calender script original-->
+<script>
+	var datepicker2 = new Datepickk();
+</script>
+<script>
+					function closeOnClickDemo2(){
+						datepicker2.unselectAll();
+						datepicker2.closeOnClick = false;
+						datepicker2.button = 'Done';
+						datepicker2.onSelect = function(checked){
+                            document.getElementById("datedemo2").value = this.toLocaleDateString();
+						};
+						datepicker2.onClose = function(){
+							datepicker2.closeOnClick2 = true;
+							datepicker2.button = null;
+							datepicker2.onClose = null;
+						}
+						datepicker2.show();
+                    }
+                    
+</script>
+
+<!--Check-in calender script original-->
+<script>
+	var datepicker3 = new Datepickk();
+</script>
+<script>
+					function closeOnClickDemo3(){
+						datepicker3.unselectAll();
+						datepicker3.closeOnClick = false;
+						datepicker3.button = 'Done';
+						datepicker3.onSelect = function(checked){
+                            document.getElementById("datedemo3").value = this.toLocaleDateString();
+						};
+						datepicker3.onClose = function(){
+							datepicker3.closeOnClick3 = true;
+							datepicker3.button = null;
+							datepicker3.onClose = null;
+						}
+						datepicker3.show();
+                    }
+                    
+</script>
+				
+
+<!--Check-out calender script original-->
+<script>
+	var datepicker4 = new Datepickk();
+</script>
+<script>
+					function closeOnClickDemo4(){
+						datepicker4.unselectAll();
+						datepicker4.closeOnClick = false;
+						datepicker4.button = 'Done';
+						datepicker4.onSelect = function(checked){
+                            document.getElementById("datedemo4").value = this.toLocaleDateString();
+						};
+						datepicker4.onClose = function(){
+							datepicker4.closeOnClick4 = true;
+							datepicker4.button = null;
+							datepicker4.onClose = null;
+						}
+						datepicker4.show();
+                    }
+                    
+</script>
+
+<!--Start-date calender script original-->
+<script>
+	var datepicker5 = new Datepickk();
+</script>
+<script>
+					function closeOnClickDemo5(){
+						datepicker5.unselectAll();
+						datepicker5.closeOnClick = false;
+						datepicker5.button = 'Done';
+						datepicker5.onSelect = function(checked){
+                            document.getElementById("datedemo5").value = this.toLocaleDateString();
+						};
+						datepicker5.onClose = function(){
+							datepicker5.closeOnClick5 = true;
+							datepicker5.button = null;
+							datepicker5.onClose = null;
+						}
+						datepicker5.show();
+                    }
+                    
+</script>
+
+<!--End-date calender script original-->
+<script>
+	var datepicker6 = new Datepickk();
+</script>
+<script>
+					function closeOnClickDemo6(){
+						datepicker6.unselectAll();
+						datepicker6.closeOnClick = false;
+						datepicker6.button = 'Done';
+						datepicker6.onSelect = function(checked){
+                            document.getElementById("datedemo6").value = this.toLocaleDateString();
+						};
+						datepicker6.onClose = function(){
+							datepicker6.closeOnClick6 = true;
+							datepicker6.button = null;
+							datepicker6.onClose = null;
+						}
+						datepicker6.show();
+                    }
+                    
+</script>
+
+<!--Select-date calender script original-->
+<script>
+	var datepicker7 = new Datepickk();
+</script>	
+<script>
+					function closeOnClickDemo7(){
+						datepicker7.unselectAll();
+						datepicker7.closeOnClick = false;
+						datepicker7.button = 'Done';
+						datepicker7.onSelect = function(checked){
+                            document.getElementById("datedemo7").value = this.toLocaleDateString();
+						};
+						datepicker7.onClose = function(){
+							datepicker7.closeOnClick7 = true;
+							datepicker7.button = null;
+							datepicker7.onClose = null;
+						}
+						datepicker7.show();
+                    }
+                    
+</script>
+<!--Flight-date calender script original-->
+<script>
+	var datepicker8 = new Datepickk();
+</script>
+	<script>
+					function closeOnClickDemo8(){
+						datepicker8.unselectAll();
+						datepicker8.closeOnClick = false;
+						datepicker8.button = 'Done';
+						datepicker8.onSelect = function(checked){
+                            document.getElementById("datedemo8").value = this.toLocaleDateString();
+						};
+						datepicker8.onClose = function(){
+							datepicker8.closeOnClick8 = true;
+							datepicker8.button = null;
+							datepicker8.onClose = null;
+						}
+						datepicker8.show();
+                    }
+                    
+				</script>
+
+
+
+		
   </body>
 </html>
