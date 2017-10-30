@@ -22,15 +22,12 @@
 /* End of Date Picker css */
 
 .home-banner .carousel-indicators .indicator-icon {
-	/* background: url('../img/sprite.png') no-repeat -256px -115px; */
-	background: #fff;
-	/* border:1px solid #6a4562; */
-	border-radius:50%;
+	background: url('../img/sprite.png') no-repeat -256px -115px;
 }
  #pauseButton{display:none;} 
  .deals-tab .ui-selectmenu-button::after {
     content: "";
-    background: none!important;
+    /*background: none!important;*/
     width: 20px !important;
     height: 10px !important;
     position: absolute;
@@ -55,11 +52,7 @@
       margin: auto;
   } */
 .home-banner .carousel-indicators .active {
-	/* background: url('../img/sprite.png') no-repeat -227px -115px; */
-	margin: 1px 7px;
-	/* background-color: transparent; */
-	background: #6a4562;
-    border-radius:50%;
+	background: url('../img/sprite.png') no-repeat -227px -115px; 
 }
 .home-banner .carousel-indicators .pause-carousel {
 	background: url('../img/sprite.png') no-repeat -283px -109px;
@@ -743,6 +736,7 @@ button:nth-of-type(3) {
 }
 #destination_list-menu.ui-menu .ui-menu-item-wrapper {
     padding: 3px 1em 3px 0!important;
+	border: 0px;
 }
 #duration-list-menu.ui-menu .ui-menu-item-wrapper {
     padding: 3px 1em 3px 0!important;
@@ -1084,6 +1078,7 @@ button:focus{
     display: inline-block;
     float: right;
 	float: right;
+	cursor: pointer;
 }
 .clr_prple{
    color: #6a4562;
@@ -1548,6 +1543,45 @@ button:focus{
 	right: 5px!important;
 	top: 10px!important;
 }
+
+
+.deals-tab .ui-selectmenu-button.ui-selectmenu-button-open:after{
+	background: url('../img/sprite.png') no-repeat -130px -160px;
+}	
+
+.filter{
+	float: right;
+    position: relative;
+    z-index: 90;
+}
+
+.filter_dd{
+	border-radius: 0px;
+	text-align: left;
+	margin-top: 12px;
+    left: -32px;
+}
+.filter_dd>li>a{
+	padding: 7px!important;
+}
+.filter_dd:after {
+    content: '';
+    display: block;
+    position: absolute;
+    border: 10px solid transparent;
+    border-bottom: 12px solid #fff;
+    top: -22px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1050;
+}
+.filter_dd>li>a:hover{
+	background: #ffffff!important;
+}
+
+
+
+
 .ui-selectmenu-text {
     display: block;
     margin-right: 20px;
@@ -1555,7 +1589,6 @@ button:focus{
     text-overflow: ellipsis;
 }
 .ui-state-active, .ui-widget-content .ui-state-active, .ui-widget-header .ui-state-active, a.ui-button:active, .ui-button:active, .ui-button.ui-state-active:hover {
-    border: 1px solid #ffffff;
     background: #ffffff;
     font-weight: normal;
     color: #000000;
@@ -1918,3 +1951,13 @@ select {
 	}
 }
 
+
+
+@media(max-width: 736px){
+	.filter_dd {
+		border-radius: 0px;
+		text-align: left;
+		margin-top: 12px;
+		left: -72px;
+	}
+}

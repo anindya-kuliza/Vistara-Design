@@ -340,6 +340,9 @@
 	float: right;
 	transform: rotate(0deg);
 }
+.navigation-bar-responsive .sub-menu-tile a {
+    color: #bb9650;
+}
 .navigation-bar-responsive .show-submenu .drop-down-icon {
 	transform: rotate(180deg);
 }
@@ -492,7 +495,9 @@
 	margin-top: 10px;
 	color: #808080;
 }
-
+.nav-dropdown-content-tile span a {
+    color: #6b4662;
+}
 
 
 @media(max-width: 1200px){
