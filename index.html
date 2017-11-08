@@ -18,7 +18,10 @@
 	<link rel="stylesheet" href="css/cal.css">
     <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
 	<link rel="stylesheet" href="css/datepickk.min.css">
+	<link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet"/>
     <script src="js/datepickk.min.js"></script>
+	
+
 
     <!-- Navigation Bar addition -->
     <link rel="stylesheet" type="text/css" href="css/navigation_bar.css">
@@ -91,34 +94,7 @@
                     <img src="img/sprite.png" class="flag" alt="flag-icon">
                     <span>Search</span>
                   </li>
-                  <!--<li class="language-select-dropdown-tile">
-                    <img src="img/sprite.png" class="flag" alt="flag-icon">
-                    <span>Search</span>
-                  </li>
-                  <li class="language-select-dropdown-tile">
-                    <img src="img/sprite.png" class="flag" alt="flag-icon">
-                    <span>Search</span>
-                  </li>
-                  <li class="language-select-dropdown-tile">
-                    <img src="img/sprite.png" class="flag" alt="flag-icon">
-                    <span>Search</span>
-                  </li>
-                  <li class="language-select-dropdown-tile">
-                    <img src="img/sprite.png" class="flag" alt="flag-icon">
-                    <span>Search</span>
-                  </li>
-                  <li class="language-select-dropdown-tile">
-                    <img src="img/sprite.png" class="flag" alt="flag-icon">
-                    <span>Search</span>
-                  </li>
-                  <li class="language-select-dropdown-tile">
-                    <img src="img/sprite.png" class="flag" alt="flag-icon">
-                    <span>Search</span>
-                  </li>
-                  <li class="language-select-dropdown-tile">
-                    <img src="img/sprite.png" class="flag" alt="flag-icon">
-                    <span>Search</span>
-                  </li>-->
+                 
                 </ul>
               </div>
             </div>
@@ -329,11 +305,6 @@
 			</li>
 			
 			
-            <!-- 
-            <li class="login">Login</li>
-            <li class="login-signup">|</li> -->
-			
-			
             <li class="navigation-bar-text signup"> <img class="account-logo" src="img/sprite.png"> <span>Sign Up</span></li>
           </ul>
 		  
@@ -341,14 +312,7 @@
         </div>
       </div>
     </header>
-    <!--navigationbar main division end: uses flex display -->
-
-    <!--navigationbar responsive division start: uses flex display: hidden above 1200px and below that triggerd by menubuttonresponsive -->
-    <!--navigation-bar-responsive-tile correspond to the navlinks of web navigationbar -->
-    <!--first navigation-bar-responsive-tile contains backbutton and thus has additional css corresponding to it -->
-    <!--navigation-bar-responsive-sub corresponds to the container sub menu of each menu navlink -->
-    <!--navigation-bar-responsive-sub-tile correspond to container for the contents of submenu -->
-    <!--additional menu and submenu tiles can be added by keeping the structure prescribed -->
+    
     <div class="navigation-bar-responsive column-flex-area">
       <span class="menu-back-icon">
         <img src="img/Sprite.png" alt="backbutton" class="back-icon">
@@ -637,7 +601,7 @@
 				
 				    <!-- Book a trip block -->
 					<div class="tab-pane active" id="flight_link">
-					    <form class="form">
+					    <form name="myForm" action="#" onsubmit="return validateForm()" method="post" class="form">
 						    <div class="col-xs-12">
 								   <div class="checkbox col-sm-6 padd_0px">
 										<label style="font-size: 1em">
@@ -646,45 +610,69 @@
 											Redeem CV points
 										</label>
 									</div>
-									<div class="btn-group pull-right mob_trip">
+									<!-- <div class="btn-group pull-right mob_trip">
 									  <button type="button" class="btn trip_btn round">Round trip</button>
 									  <button type="button" class="btn trip_btn one">One way</button>
-									</div>
+									</div> -->
+									<div id="tabs-container">
+    <ul class="triptabs-menu">
+        <li class="active-link round-trip-border"><a href="#triptab-1">Round trip</a></li>
+        <li class="one-way-border"><a href="#triptab-2">One way</a></li>
+       
+    </ul>
+   
+</div>
 						    </div>
-							
+					<div class="tabs-contents2"><!-- Trip Tabs Content -->
+					    <div id="triptab-1" class="triptab-content">
 							<div class="col-xs-12 space_margin_btm_20"></div>
 							
 							<div class="col-xs-12">
 							<div class="row">
-								<div class="col-md-3 col-sm-6">
-									<select class="form-control trip_input">
-									    <option value="" selected>From</option>
-									    <option value="volvo">Volvo</option>
-                                        <option value="saab">Saab</option>
-                                        <option value="opel">Opel</option>
-                                        <option value="audi">Audi</option>
+								 <div class="col-md-3 col-sm-6" style="height: 50px;">
+									<select    style="background: #eeeeee url('location.png') no-repeat !important;background-position: 96% 46% !important;background-size: 16px !important;"id="from" class="form-control trip_input location-icon" >
+									    <option value="">From</option>
+									    <option>Ahmedabad (AMD) </option>
+<option>Amritsar (ATQ) </option>
+<option>Bagdogra (IXB) </option><option>Bengaluru (BLR) </option><option>Bhubaneswar (BBI) </option><option>Chandigarh (IXC) </option><option>Goa (GOI) </option><option>Guwahati (GAU) </option><option>Hyderabad (HYD) </option><option>Jammu (IXJ) </option><option>Jodhpur (JDH) </option><option>Kochi (COK) </option><option>Kolkata (CCU) </option><option>Leh (IXL) </option><option>Lucknow (LKO) </option><option>Mumbai (BOM) </option><option>New Delhi (DEL) </option><option>Port Blair (IXZ) </option><option>Pune (PNQ) </option><option>Ranchi (IXR) </option><option>Srinagar (SXR) </option><option>Varanasi (VNS) </option>
+
+										
 									</select>
-									<span class="location_icon"></span>
+									<!-- <span class="location_icon"></span> -->
 									<span class="roundtrip_icon hidden-xs"></span>
-								</div>
-								<div class="col-md-3 col-sm-6">
-								    <select class="form-control trip_input">
-									   <option value="" selected>To</option>
-									   <option value="volvo">Volvo</option>
-                                        <option value="saab">Saab</option>
-                                        <option value="opel">Opel</option>
-                                        <option value="audi">Audi</option>
+								</div> 
+								
+<!-- 								   <div class="col-md-3 col-sm-6 select-editable">
+								   
+    <select id="from" class="">
+        <option value=""></option>
+        <option value="115x175 mm">115x175 mm</option>
+        <option value="120x160 mm">120x160 mm</option>
+        <option value="120x287 mm">120x287 mm</option>
+    </select>
+
+    <input id="someInput" type="text" name="format" value="" placeholder="From"/>
+</div> -->
+								
+								
+								<div class="col-md-3 col-sm-6" style="height: 50px;">
+								    <select  style="background: #eeeeee url('location.png') no-repeat !important;background-position: 96% 46% !important;background-size: 16px !important;" id="to" class="form-control trip_input">
+									   <option value="">To</option>
+									   <option>Ahmedabad (AMD) </option>
+<option>Amritsar (ATQ) </option>
+<option>Bagdogra (IXB) </option><option>Bengaluru (BLR) </option><option>Bhubaneswar (BBI) </option><option>Chandigarh (IXC) </option><option>Goa (GOI) </option><option>Guwahati (GAU) </option><option>Hyderabad (HYD) </option><option>Jammu (IXJ) </option><option>Jodhpur (JDH) </option><option>Kochi (COK) </option><option>Kolkata (CCU) </option><option>Leh (IXL) </option><option>Lucknow (LKO) </option><option>Mumbai (BOM) </option><option>New Delhi (DEL) </option><option>Port Blair (IXZ) </option><option>Pune (PNQ) </option><option>Ranchi (IXR) </option><option>Srinagar (SXR) </option><option>Varanasi (VNS) </option>
+
 									</select>
-									<span class="location_icon"></span>
+									<!-- <span class="location_icon"></span> -->
 								</div>
 								<div class="col-md-3 col-sm-6" id="closeOnClick" onclick="closeOnClickDemo()">
-								    <input type="text" class="form-control trip_input" id="datedemo" placeholder="Depart"> 									
+								    <input type="text" name="depart" class="form-control trip_input" id="datedemo" placeholder="Depart"> 									
 									<span class="calender_icon"  ></span>									
 								</div>
 								
 								
 								<div class="col-md-3 col-sm-6" id="closeOnClick2" onclick="closeOnClickDemo2()">
-								    <input type="text" class="form-control trip_input" id="datedemo2" placeholder="Return"> 									
+								    <input type="text" name="return" class="form-control trip_input" id="datedemo2" placeholder="Return"> 									
 									<span class="calender_icon"  ></span>									
 								</div>
 							</div>
@@ -696,17 +684,75 @@
 							<div class="col-xs-12">
 							<div class="row">
 								<div class="col-md-6 col-sm-6">
-									<input type="text" class="form-control trip_input" placeholder="Passengers">
+									<input type="text" name="passengers" class="form-control trip_input" id ="" placeholder="Passengers">
 									<span class="passenger_icon" data-target="#passengerModal" data-toggle="modal"></span>
 								</div>
 								<div class="col-md-3 col-sm-6">
-								   <input type="text" class="form-control trip_input" placeholder="Promo code">
+								   <input type="text" name="promo" class="form-control trip_input" id="" placeholder="Promo code">
 								</div>
 								<div class="col-md-3">
 									<button class="search_flight_btn">Search Flights</button>
 								</div>
 							</div>
+							</div></div>
+							
+							  <div id="triptab-2" class="triptab-content"><div class="col-xs-12 space_margin_btm_20"></div>
+							
+							<div class="col-xs-12">
+							<div class="row">
+								<div class="col-md-3 col-sm-6" style="height: 50px;">
+									<select   style="background: #eeeeee url('location.png') no-repeat !important;background-position: 96% 46% !important;background-size: 16px !important;"id="from" class="form-control trip_input location-icon" >
+									    <option value="">From</option>
+									    <option>Ahmedabad (AMD) </option>
+<option>Amritsar (ATQ) </option>
+<option>Bagdogra (IXB) </option><option>Bengaluru (BLR) </option><option>Bhubaneswar (BBI) </option><option>Chandigarh (IXC) </option><option>Goa (GOI) </option><option>Guwahati (GAU) </option><option>Hyderabad (HYD) </option><option>Jammu (IXJ) </option><option>Jodhpur (JDH) </option><option>Kochi (COK) </option><option>Kolkata (CCU) </option><option>Leh (IXL) </option><option>Lucknow (LKO) </option><option>Mumbai (BOM) </option><option>New Delhi (DEL) </option><option>Port Blair (IXZ) </option><option>Pune (PNQ) </option><option>Ranchi (IXR) </option><option>Srinagar (SXR) </option><option>Varanasi (VNS) </option>
+
+										
+									</select>
+									<!-- <span class="location_icon"></span> -->
+									<span class="roundtrip_icon hidden-xs"></span>
+								</div> 
+								<div class="col-md-3 col-sm-6" style="height: 50px;">
+								    <select  style="background: #eeeeee url('location.png') no-repeat !important;background-position: 96% 46% !important;background-size: 16px !important;" id="to" class="form-control trip_input">
+									   <option value="">To</option>
+									   <option>Ahmedabad (AMD) </option>
+<option>Amritsar (ATQ) </option>
+<option>Bagdogra (IXB) </option><option>Bengaluru (BLR) </option><option>Bhubaneswar (BBI) </option><option>Chandigarh (IXC) </option><option>Goa (GOI) </option><option>Guwahati (GAU) </option><option>Hyderabad (HYD) </option><option>Jammu (IXJ) </option><option>Jodhpur (JDH) </option><option>Kochi (COK) </option><option>Kolkata (CCU) </option><option>Leh (IXL) </option><option>Lucknow (LKO) </option><option>Mumbai (BOM) </option><option>New Delhi (DEL) </option><option>Port Blair (IXZ) </option><option>Pune (PNQ) </option><option>Ranchi (IXR) </option><option>Srinagar (SXR) </option><option>Varanasi (VNS) </option>
+
+									</select>
+									<!-- <span class="location_icon"></span> -->
+								</div>
+								<div class="col-md-3 col-sm-6" id="closeOnClick" onclick="closeOnClickDemo()">
+								    <input type="text" name="depart" class="form-control trip_input" id="datedemo" placeholder="Depart"> 									
+									<span class="calender_icon"  ></span>									
+								</div>
+								
+								
+								<div class="col-md-3 col-sm-6" id="closeOnClick2" onclick="">
+								    <input type="text" name="return" disabled="" class="form-control trip_input one-way-return" id="datedemo2" placeholder="Return"> 									
+																		
+								</div>
 							</div>
+							</div>
+							
+							
+							<div class="col-xs-12 space_margin_btm_20 hidden-sm hidden-xs"></div>
+							
+							<div class="col-xs-12">
+							<div class="row">
+								<div class="col-md-6 col-sm-6">
+									<input type="text" name="passengers" class="form-control trip_input" id ="" placeholder="Passengers">
+									<span class="passenger_icon" data-target="#passengerModal" data-toggle="modal"></span>
+								</div>
+								<div class="col-md-3 col-sm-6">
+								   <input type="text" name="promo" class="form-control trip_input" id="" placeholder="Promo code">
+								</div>
+								<div class="col-md-3">
+									<button class="search_flight_btn">Search Flights</button>
+								</div>
+							</div>
+							</div></div>
+						</div>
 							
 						</form>
 			        </div>
@@ -1070,7 +1116,7 @@
 				
 				<!-- My Booking block-->
 					<div class="tab-pane" id="my_booking_link">
-						 <form class="form">
+						 <form action="" class="validate">
 						    <img src="img/mybookings-pattern.png" class="checkin_bg"/>
 						    <div class="col-xs-12 space_margin_btm_20"></div>
 						 
@@ -1078,10 +1124,12 @@
 						    <div class="col-xs-12">
 								<div class="row">
 									<div class="col-md-3 col-sm-4">
-										<input type="text" class="form-control trip_input" placeholder="Booking reference number">
+										<input type="text" name="PNR" class="form-control trip_input" placeholder="Booking reference number">
 									</div>
 									<div class="col-md-3 col-sm-4">
-										<input type="text" class="form-control trip_input" placeholder="Last name primary passenger">
+										<input type="text"  name="Lastname" class="form-control trip_input" placeholder="Last name primary passenger">
+										<!-- <label for="lastname">Last Name</label> -->
+
 									</div>
 									<div class="col-md-3 col-sm-4">
 										<button class="search_flight_btn">Submit</button>
@@ -1163,20 +1211,21 @@
 						 <form class="form">
 						 
 						    <div class="col-xs-12">
+							
 								<div class="row">
 									<div class="col-md-3 col-sm-3">
-										<div class="radio">
+										<div  class="radio"  >
 											<label>
-												<input type="radio" name="status" value="">
+												<input id="id_radio1" type="radio" name="name_radio" value="value_radio1" checked="checked">
 												<span class="cr"><i class="cr-icon fa fa-circle"></i></span>
 												By Flight Number
 											</label>
 										</div>
 									</div>
 									<div class="col-md-3 col-sm-3">
-										<div class="radio">
+										<div class="radio" id="id_radio1" >
 											<label>
-												<input type="radio" name="status" value="" >
+												<input id="id_radio2" type="radio" name="name_radio" value="value_radio2" >
 												<span class="cr"><i class="cr-icon fa fa-circle"></i></span>
 												By Route
 											</label>
@@ -1188,21 +1237,24 @@
 							<div class="col-xs-12 space_margin_btm_20"></div>
 						    
 							
-							<div class="col-xs-12">
-								<div class="row">
+							<div class="col-xs-12" id="divs">
+							    
+								<div class="row" id="div1">
 									<div class="col-md-3 col-sm-6">
 										<input type="text" class="form-control trip_input" placeholder="Flight number">
 									</div>
-									<div class="col-md-3 col-sm-6">
-									    <select class="form-control trip_input">
-										   <option value="" selected>Origin</option>
-										   <option value="volvo">Volvo</option>
-                                           <option value="saab">Saab</option>
-                                           <option value="opel">Opel</option>
-                                           <option value="audi">Audi</option>
-										</select>
-										<span class="location_icon"></span>
-									</div>
+									<div class="col-md-3 col-sm-6" style="height: 50px;">
+									<select   style="background: #eeeeee url('location.png') no-repeat !important;background-position: 96% 46% !important;background-size: 16px !important;"id="from" class="form-control trip_input location-icon" >
+									    <option value="" selected>Origin</option>
+									    <option>Ahmedabad (AMD) </option>
+<option>Amritsar (ATQ) </option>
+<option>Bagdogra (IXB) </option><option>Bengaluru (BLR) </option><option>Bhubaneswar (BBI) </option><option>Chandigarh (IXC) </option><option>Goa (GOI) </option><option>Guwahati (GAU) </option><option>Hyderabad (HYD) </option><option>Jammu (IXJ) </option><option>Jodhpur (JDH) </option><option>Kochi (COK) </option><option>Kolkata (CCU) </option><option>Leh (IXL) </option><option>Lucknow (LKO) </option><option>Mumbai (BOM) </option><option>New Delhi (DEL) </option><option>Port Blair (IXZ) </option><option>Pune (PNQ) </option><option>Ranchi (IXR) </option><option>Srinagar (SXR) </option><option>Varanasi (VNS) </option>
+
+										
+									</select>
+									<!-- <span class="location_icon"></span> -->
+									<span class="roundtrip_icon hidden-xs"></span>
+								</div>
 									<!-- <div class="col-md-3 col-sm-6">
 									   <input type="text" class="form-control trip_input" placeholder="Flight date">
 										<span class="calender_icon"></span>
@@ -1215,7 +1267,44 @@
 										<button class="search_flight_btn">Search Hotel</button>
 									</div>
 								</div>
+								
+								 <div class="row" id="div2">
+									
+									<div class="col-md-3 col-sm-6" style="height: 50px;">
+									<select   style="background: #eeeeee url('location.png') no-repeat !important;background-position: 96% 46% !important;background-size: 16px !important;"id="from" class="form-control trip_input location-icon" >
+									    <option value="" selected>Origin</option>
+									    <option>Ahmedabad (AMD) </option>
+<option>Amritsar (ATQ) </option>
+<option>Bagdogra (IXB) </option><option>Bengaluru (BLR) </option><option>Bhubaneswar (BBI) </option><option>Chandigarh (IXC) </option><option>Goa (GOI) </option><option>Guwahati (GAU) </option><option>Hyderabad (HYD) </option><option>Jammu (IXJ) </option><option>Jodhpur (JDH) </option><option>Kochi (COK) </option><option>Kolkata (CCU) </option><option>Leh (IXL) </option><option>Lucknow (LKO) </option><option>Mumbai (BOM) </option><option>New Delhi (DEL) </option><option>Port Blair (IXZ) </option><option>Pune (PNQ) </option><option>Ranchi (IXR) </option><option>Srinagar (SXR) </option><option>Varanasi (VNS) </option>
+
+										
+									</select>
+									<!-- <span class="location_icon"></span> -->
+									<span class="roundtrip_icon hidden-xs"></span>
+								</div>
+									<div class="col-md-3 col-sm-6" style="height: 50px;">
+									<select   style="background: #eeeeee url('location.png') no-repeat !important;background-position: 96% 46% !important;background-size: 16px !important;"id="from" class="form-control trip_input location-icon" >
+									    <option value="" selected>Destination</option>
+									    <option>Ahmedabad (AMD) </option>
+<option>Amritsar (ATQ) </option>
+<option>Bagdogra (IXB) </option><option>Bengaluru (BLR) </option><option>Bhubaneswar (BBI) </option><option>Chandigarh (IXC) </option><option>Goa (GOI) </option><option>Guwahati (GAU) </option><option>Hyderabad (HYD) </option><option>Jammu (IXJ) </option><option>Jodhpur (JDH) </option><option>Kochi (COK) </option><option>Kolkata (CCU) </option><option>Leh (IXL) </option><option>Lucknow (LKO) </option><option>Mumbai (BOM) </option><option>New Delhi (DEL) </option><option>Port Blair (IXZ) </option><option>Pune (PNQ) </option><option>Ranchi (IXR) </option><option>Srinagar (SXR) </option><option>Varanasi (VNS) </option>
+
+										
+									</select>
+									<!-- <span class="location_icon"></span> -->
+									<span class="roundtrip_icon hidden-xs"></span>
+								</div>
+									<div class="col-md-3 col-sm-6" id="closeOnClick8" onclick="closeOnClickDemo8()">
+								    <input type="text" class="form-control trip_input" id="datedemo8" placeholder="Flight date"> 									
+									<span class="calender_icon"  ></span>									
+								   </div>
+									<div class="col-md-3 col-sm-6">
+										<button class="search_flight_btn">Find Status</button>
+									</div>
+								</div>
+								
 							</div>
+							
 							
 							
 						</form>
@@ -1225,7 +1314,7 @@
 				
 				<!-- Checkin block-->
 					<div class="tab-pane" id="checkin_link">
-						 <form class="form">
+						 <form  class="form validate" action="" >
 						    <img src="img/mybookings-pattern.png" class="checkin_bg"/>
 						    <div class="col-xs-12 space_margin_btm_20"></div>
 						 
@@ -1233,10 +1322,12 @@
 						    <div class="col-xs-12">
 								<div class="row">
 									<div class="col-md-3 col-sm-6">
-										<input type="text" class="form-control trip_input" placeholder="Last name">
+										<input type="text" name="lastname" id="lastname"  class="form-control trip_input" placeholder="Last name">
+										
 									</div>
 									<div class="col-md-3 col-sm-6">
-										<input type="text" class="form-control trip_input" placeholder="Booking reference number">
+										<input  maxlength="6" type="text"   id="mobile_phone" name="mobile_phone"  class="phone-group form-control trip_input" placeholder="Booking reference number">
+										 
 									</div>
 								</div>
 							</div>
@@ -1252,10 +1343,11 @@
 							<div class="col-xs-12">
 								<div class="row">
 									<div class="col-md-6 col-sm-6">
-										<input type="text" class="form-control trip_input" placeholder="E-Ticket number">
+										<input maxlength="14" type="text"  id="home_phone" name="home_phone" class="phone-group form-control trip_input" placeholder="E-Ticket number">
 									</div>
 									<div class="col-md-3 col-sm-6">
-										<button class="search_flight_btn">Submit</button>
+										<button type="submit" class="search_flight_btn">Submit</button>
+										<!-- <button type="submit">Register</button> -->
 									</div>
 								</div>
 							</div>
@@ -1949,32 +2041,32 @@
           <div class="col-sm-3 col-md-3 js-collapse-list">
             <div class="footer-list-heading color-base-1">About Us<span class="collapse-icon-on-mobile abt_togle"></span></div>
             <ul class="links-list hide-content no-padding js-collapse-content">
-              <li><a href="#">Company Info</a></li>
-              <li><a href="#">Terms and Conditions</a></li>
+              <li><a href="#">About Vistara</a></li>
               <li><a href="#">Press Kit</a></li>
               <li><a href="#">Careers</a></li>
-              <li><a href="#">Charter Booking</a></li>
               <li><a href="#">Privacy Policy</a></li>
+              <li><a href="#">Inflight Magazine</a></li>
+              <li><a href="#">Sitemap</a></li>
             </ul>
           </div>
           <div class="col-sm-3 col-md-3 js-collapse-list">
             <div class="footer-list-heading color-base-1">Services<span class="collapse-icon-on-mobile svc_togle"></span></div>
             <ul class="links-list hide-content no-padding js-collapse-content">
-              <li><a href="#">Company Info</a></li>
-              <li><a href="#">Terms and Conditions</a></li>
-              <li><a href="#">Press Kit</a></li>
-              <li><a href="#">Careers</a></li>
               <li><a href="#">Charter Booking</a></li>
-              <li><a href="#">Privacy Policy</a></li>
+              <li><a href="#">Group Booking</a></li>
+              <li><a href="#">Mobile Boarding Pass</a></li>
+              <li><a href="#">Cargo</a></li>
+              <li><a href="#">Where we fly</a></li>
+              <li><a href="#">Travel Certificate</a></li>
             </ul>
           </div>
           <div class="col-sm-3 col-md-3 js-collapse-list">
             <div class="footer-list-heading color-base-1">Help<span class="collapse-icon-on-mobile help_togle"></span></div>
             <ul class="links-list hide-content no-padding js-collapse-content">
-              <li><a href="#">Company Info</a></li>
-              <li><a href="#">Terms and Conditions</a></li>
-              <li><a href="#">Press Kit</a></li>
-              <li><a href="#">Careers</a></li>
+              <li><a href="#">Contact Us</a></li>
+              <li><a href="#">*FAQs</a></li>
+              <li><a href="#">T&C</a></li>
+              <li><a href="#">Feedback & Enquiry</a></li>
             </ul>
           </div>
           <div class="col-sm-3 col-md-3">
@@ -2000,11 +2092,6 @@
         </div>
       </div>
     </div>
-	
-	
-	
-	
-	
 	
 	<!-- Passenger Modal -->
 	<div tabindex="-1" class="modal fade" id="passengerModal" role="dialog" aria-hidden="true" aria-labelledby="myModalLabel">
@@ -2195,6 +2282,12 @@
   <script src="js/vendor/bootstrap.min.js"></script>
   <script src="js/main.js"></script>
   <script src="js/jquery-ui-modified.js"></script>
+  <!-- <script src='js/jquery.min.js'></script> --> 
+   <script src='js/jquery.validate.min.js'></script>
+  <script  src="js/additional-methods.js"></script> 
+  <script  src="js/main-ui.js"></script> 
+<!--   <script src="js/input-select2.js"></script> -->
+  
   
   
   <!--Depart calender script-->
@@ -2238,7 +2331,18 @@
 	  document.getElementById("return").value = retrn;
     }
   </script>
+
   
+<!-- <script>
+			      $(function() {
+          var $divs = $('#divs > div');
+          $divs.first().show()
+          $('input[name=name_radio]').on('change',function() {
+                  $divs.hide();
+                  $divs.eq( $('input[name=name_radio]').index( this ) ).show();
+           });
+});
+			  </script> -->
   
   <script>
      $(".flight").click(function(){
@@ -2528,6 +2632,23 @@
                     }
                     
 </script>
+<script>
+					function closeOnClickDemo2(){
+						datepicker2.unselectAll();
+						datepicker2.closeOnClick = false;
+						datepicker2.button = 'Done';
+						datepicker2.onSelect = function(checked){
+                            document.getElementById("datedemo9").value = this.toLocaleDateString();
+						};
+						datepicker2.onClose = function(){
+							datepicker2.closeOnClick2 = true;
+							datepicker2.button = null;
+							datepicker2.onClose = null;
+						}
+						datepicker2.show();
+                    }
+                    
+</script>
 
 <!--Check-in calender script original-->
 <script>
@@ -2659,8 +2780,8 @@
 						datepicker8.show();
                     }
                     
-				</script>
-
+	</script>
+	<!-- Form Validation Script -->
 
 
 		

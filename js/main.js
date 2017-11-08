@@ -4,20 +4,27 @@
 		init();
 		//For Tab Responsive Flight Passes icon enable/disable code in just below 2 lines.
 		$('.book').on('click', function(){
-        $('.passes span#passes_icon_change').removeClass('passes_icon_active').addClass('passes_icon');
+           $('.passes span#passes_icon_change').removeClass('passes_icon_active').addClass('passes_icon');
 		});
 		
-		/* $('.carousel-indicators li.indicator-icon').on('click', function(){
-    
-            $('.carousel-indicators li').removeClass('active');
-	        $(this).addClass('active') .attr("data-target || href");
-   
-       }); */
-		$(".arrow-up").hide();
-        $(".left-grid").click(function(){
-            
-            $(this).find(".arrow-up, .arrow-down").toggle();
-         });
+	
+	
+	 $(".triptabs-menu a").click(function(event) {
+        event.preventDefault();
+        $(this).parent().addClass("active-link");
+        $(this).parent().siblings().removeClass("active-link");
+        var href = $(this).attr("href");
+       $(".tabs-contents2 > div").hide();
+       $(href).show();
+    });
+
+	
+	//End Trip Tab Panel
+	
+	// Check in reference validation
+	
+	
+	// End Check in reference validation
 		
 	});
 	var activeDealList, dealLists;
@@ -187,7 +194,7 @@
 	}
 
 	function init() {
-		$('.select').selectmenu();
+		 $('.select').selectmenu();
 		console.log('Hello World!');
 		activeDealList = $('#deals_list li.active');
 		dealLists = $('#deals_list li');
@@ -203,20 +210,13 @@
 		addChangeCalendarListener();
 		addTabListListener();
 		truncatedInfoText();
-		initializenavigationbar();
+		initializenavigationbar(); 
 
 	}
 
 })();
 
-// $(window).resize(function() {
-		// 	console.log($(window).width());
-		// 	if ($(window).width() <= 768) {
-		// 		$('.carousel-inner .item img').attr('src', 'img/banner-Image-for-mobile.png');
-		// 	} else {
-		// 		$('.carousel-inner .item img').attr('src', 'img/banner-image.png');
-		// 	}
-		// });
+
 		
 		
 		
