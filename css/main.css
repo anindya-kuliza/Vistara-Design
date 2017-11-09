@@ -1,15 +1,78 @@
 /* @css for vistara home
 */
 
-select {
-    /* height: 100px !important; */
+.dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1000;
+    display: none;
+    float: left;
+    min-width: 160px;
+    padding: 5px 0;
+    margin: 2px 0 0;
+    font-size: 14px;
+    text-align: left;
+    list-style: none;
+    background-color: #fff;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+    border: 1px solid #ccc;
+    border: 1px solid rgba(0,0,0,.15);
+    border-radius: 4px;
+    -webkit-box-shadow: 0 6px 12px rgba(0,0,0,.175);
+    box-shadow: 0 6px 12px rgba(0,0,0,.175);
+    width: 100%;
+}
+.flight-dropdown:focus,.flight-dropdown:hover {  
+    color: #333;
+    background-color: #eeeeee;
+    border-color: #8c8c8c;
 }
 
-/* select option {
-    max-height: 50px;
-    background-color: yellow;
-    overflow: auto;
-} */
+.flight-dropdown .btn-default {
+    /* text-shadow: 0 1px 0 #fff;
+    background-image: -webkit-linear-gradient(top,#fff 0,#e0e0e0 100%);
+    background-image: -o-linear-gradient(top,#fff 0,#e0e0e0 100%);
+    background-image: -webkit-gradient(linear,left top,left bottom,from(#fff),to(#e0e0e0));
+    background-image: linear-gradient(to bottom,#fff 0,#e0e0e0 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffffff', endColorstr='#ffe0e0e0', GradientType=0);
+    filter: progid:DXImageTransform.Microsoft.gradient(enabled=false);
+    background-repeat: repeat-x;
+    border-color: #dbdbdb;
+    border-color: #ccc; */
+	
+	text-shadow: none!important;
+	box-shadow: none!important;
+	background: #eeeeee!important;
+    background-image: none!important;
+    border: none!important;
+}
+.flight-dropdown .location_icon{right: 0px;}
+.flight-dropdown-btn{}
+.flight-dropdown{background: #eeeeee !important;padding: 1px 0px;}
+.flight-dropdown-list{
+	
+	}
+.dropdown-menu {
+    max-height: 146px;
+    overflow: scroll;
+    overflow-x: hidden;
+    margin-top: 0px;
+}
+
+.caret {
+	float: right;
+    margin-top: 5%;
+}
+
+#menu1 {
+    /* width: 160px; */ 
+	width: 100%;
+    text-align: left;
+}  
+.dropdown-toggle{position: relative}
+/*End of Dropdown css */
 	
 #trip_tab .trip_content {
     /* background-color: #ffffff;
