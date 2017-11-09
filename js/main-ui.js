@@ -7,6 +7,14 @@
 		
 		
 $(document).ready(function () {
+	/* $("option").height("120px"); */
+	/*   $( "select option" ).one( "click", function() {
+  $( this ).height( 30 ).css({
+    cursor: "auto",
+    backgroundColor: "green"
+  });
+}); */
+	//
 	
 	$('input[name="name_radio"]').on('change', function(){
     if ($(this).val()=='value_radio1') {
@@ -33,7 +41,8 @@ $('.validate').each(function () {
     lastname: "required",
 	Lastname: "required",
     mobile_phone: {
-      require_from_group: [1, ".phone-group"]
+      require_from_group: [1, ".phone-group"],
+	  minlength: 5
 	  /* minlength: 5,
 	  maxlength: 6 */
     },
@@ -58,9 +67,9 @@ $('.validate').each(function () {
          number: "*Please enter valid number" 
       },
 	  mobile_phone: {
-	    require_from_group: "*Please fill at least this field"
-        /* minlength: "*This must be at least 5 characters long",
-		maxlength: "*This can't be more than 6 characters" */
+	    require_from_group: "*Please fill at least this field",
+        minlength: "*Booking Reference No. must be 5/6 characters."
+		/*maxlength: "*This can't be more than 6 characters" */
       },
 	  home_phone: {
 	    require_from_group: "*Please fill at least this field",

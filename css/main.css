@@ -1,7 +1,25 @@
 /* @css for vistara home
 */
+
+select {
+    /* height: 100px !important; */
+}
+
+/* select option {
+    max-height: 50px;
+    background-color: yellow;
+    overflow: auto;
+} */
+	
+#trip_tab .trip_content {
+    /* background-color: #ffffff;
+    padding: 20px;
+    box-sizing: border-box; */
+    height: 230px;
+}
+.validate label{margin-bottom:0px!important;}
 select[multiple], select[size] {
-    height: 20px!important;
+    /* height: 20px!important; */
 }
 .location-icon{background-position: 96% 46% !important;background-size: 16px !important;}
 /*  #fav_show span::before {
