@@ -8926,7 +8926,7 @@ $.extend( Datepicker.prototype, {
 					( /all|right/.test( cornerClass ) && row === 0 ? ( isRTL ? prev : next ) : "" ) +
 					this._generateMonthYearHeader( inst, drawMonth, drawYear, minDate, maxDate,
 					row > 0 || col > 0, monthNames, monthNamesShort ) + // draw month headers
-					"</div><table class='ui-datepicker-calendar'><thead><tr><td colspan='7'><p style='padding-left: 23px;margin-bottom: 20px;margin-top: 30px;font-size: 14px;text-align: left;color: #000000'>Date</p></td></tr>" +
+					"</div><table class='ui-datepicker-calendar'><thead><tr><td colspan='7'><p style='padding-left: 17px;margin-bottom: 20px;margin-top: 12px;font-size: 14px;text-align: left;color: #000000'>Day</p></td></tr>" +
 					"<tr>";
 				thead = ( showWeek ? "<th class='ui-datepicker-week-col'>" + this._get( inst, "weekHeader" ) + "</th>" : "" );
 				for ( dow = 0; dow < 7; dow++ ) { // days of the week

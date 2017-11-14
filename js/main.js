@@ -168,16 +168,22 @@
 	  var num = 50; //number of pixels before modifying styles
 
 	  if ($(window).scrollTop() > num) {
-	      $('.navigation-bar').css("background-color","#fff");
+	      $('.navigation-bar').addClass("header-sticky");
+		  $('.navigation-bar').css("background-color","#fff");
+		  /* $('.navigation-bar').css({"background-color": "#fff", "box-shadow": "0px 3px 8px rgb(100,100,100)", "-moz-box-shadow": "0px 3px 8px rgb(100,100,100)", "-webkit-box-shadow": "0px 3px 8px rgb(100,100,100)"}); */
 	  } else {
 	    $('.navigation-bar').css("background-color","transparent");
+		$('.navigation-bar').removeClass("header-sticky");
 	  }
 
 	  $(window).bind('scroll', function () {
 	      if ($(window).scrollTop() > num) {
-	          $('.navigation-bar').css("background-color","#fff");
+	           $('.navigation-bar').css("background-color","#fff"); 
+			  $('.navigation-bar').addClass("header-sticky");
 	      } else {
+			$('.navigation-bar').removeClass("header-sticky");
 	        $('.navigation-bar').css("background-color","transparent");
+			
 	      }
 	  });
 	}

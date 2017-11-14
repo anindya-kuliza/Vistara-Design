@@ -1,6 +1,65 @@
 /* @css for vistara home
 */
+#left_container:after {
+    /* height: 10px;
+    display: block;
+    width: 100px;
+    background: #808080;
+    border-right: 1px white;
+    content: ''; */
+}
+.ui-datepicker-next,.ui-datepicker-prev{display:none;}
+.ui-datepicker-title{display: none;}
+.main-container {
+	display: flex;
+}
+#left_container {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	width: 30%;
+}
+#datepicker1 {
+	flex-grow:1;
+}
+#datepicker2 {
+	flex-grow:1;
+}
+#custom_year{
+	display: flex;
+	flex-direction: row;
+}
 
+#custom_menu {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+.month {
+	padding: 10px;
+	color: gray;
+	font-size: 18px;
+}
+
+.year {
+	padding: 10px;
+	color: gray;
+	font-size: 18px;
+}
+.main-container .active {
+	background-color: #f5deb3;
+}
+.disable-month {
+	color: #d8d8d6;
+}
+/*  */
+.header-sticky{
+	
+	background-color: #fff;
+	-moz-box-shadow: 0px 3px 8px rgb(100,100,100);
+-webkit-box-shadow: 0px 3px 8px rgb(100,100,100);
+box-shadow: 0px 3px 8px rgb(100,100,100);
+}
 .dropdown-menu {
     position: absolute;
     top: 100%;
@@ -31,17 +90,6 @@
 }
 
 .flight-dropdown .btn-default {
-    /* text-shadow: 0 1px 0 #fff;
-    background-image: -webkit-linear-gradient(top,#fff 0,#e0e0e0 100%);
-    background-image: -o-linear-gradient(top,#fff 0,#e0e0e0 100%);
-    background-image: -webkit-gradient(linear,left top,left bottom,from(#fff),to(#e0e0e0));
-    background-image: linear-gradient(to bottom,#fff 0,#e0e0e0 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffffff', endColorstr='#ffe0e0e0', GradientType=0);
-    filter: progid:DXImageTransform.Microsoft.gradient(enabled=false);
-    background-repeat: repeat-x;
-    border-color: #dbdbdb;
-    border-color: #ccc; */
-	
 	text-shadow: none!important;
 	box-shadow: none!important;
 	background: #eeeeee!important;
@@ -75,58 +123,11 @@
 /*End of Dropdown css */
 	
 #trip_tab .trip_content {
-    /* background-color: #ffffff;
-    padding: 20px;
-    box-sizing: border-box; */
-    height: 230px;
+    /* height: 230px; */
+	height: 223px;
 }
 .validate label{margin-bottom:0px!important;}
-select[multiple], select[size] {
-    /* height: 20px!important; */
-}
-.location-icon{background-position: 96% 46% !important;background-size: 16px !important;}
-/*  #fav_show span::before {
-    content:"\f0dc";
-    font-family: FontAwesome;
-    color: #000;
-    padding: 12px 8px;
-    position: absolute; right: 0; top: 0;
-    background: red;
-    z-index: 1;
-    text-align: center;
-    width: 10%;
-    height: 100%;      
-    pointer-events: none;
-    box-sizing: border-box;   
-} */
-/*  .select-editable .trip_input {
-    background: #eeeeee;
-    border: 0px;
-    border-radius: 0px;
-    box-shadow: 0px 0px 0px #fff;
-    width: 100% !important;
-    display: block !important;
-    position: relative;
-}
-.select-editable .form-control {
-    display: block;
-    width: 100%;
-    height: 34px;
-    padding: 6px 12px;
-    font-size: 14px;
-    line-height: 1.42857143;
-    color: #555;
-    background-color: #fff;
-    background-image: none;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
-    box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
-    -webkit-transition: border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
-    -o-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
-    transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
-} */
- 
+.location-icon{background-position: 96% 46% !important;background-size: 16px !important;} 
 #div2 {
     display:none; 
 }
@@ -150,17 +151,14 @@ label.error {
 
 .triptabs-menu li {
 	width:95px;
-    height: 30px;
-    line-height: 30px;
+    /* height: 30px;
+    line-height: 30px; */
+	padding: 5px 0;
     float: left;
-    /* margin-right: 10px; */
-    /* background-color: #ccc; */
     border: 2px solid #999999;
 	list-style-type: none;
+	text-align: center;
 }
-
-
-
 .triptabs-menu li.active-link {
     position: relative;
     background-color: #fff;
@@ -171,7 +169,7 @@ label.error {
 .round-trip-border{border-right: 1px solid #b89555!important;}
 .one-way-border{border-left: 1px solid #b89555!important;}
 .triptabs-menu li a {
-    padding: 10px;
+    /* padding: 10px; */
    /*  text-transform: uppercase; */
     color: #999999;
     text-decoration: none; 
@@ -1327,6 +1325,10 @@ button:focus{
 
 
 @media(max-width: 768px){
+	.tile-wrapper img{width:100%;}
+	.deals-tab .left-grid {    
+       width: 100%!important; 
+}
 	.tab_position{
 		margin-top: 20px;
 		z-index: 30;
@@ -1347,6 +1349,9 @@ button:focus{
 		padding: 20px 0px;
 		box-sizing: border-box;
 	}
+	.flight-dropdown {
+    margin-bottom: 15px;
+}
 	.trip_input {
 		margin-bottom: 15px;
 	}
@@ -1430,7 +1435,8 @@ button:focus{
 	display: flex;
 }
 .deals-tab .left-grid {
-	width: 245px;
+	/* width: 245px; */
+	width: 20.8%;
 	display: inline-block;
 	float: left;
 	flex: 0 0 auto;
@@ -1489,7 +1495,8 @@ button:focus{
 .deals-tab .ui-selectmenu-button {
 	border-radius: 0;
 	border: 1px solid #47143d;
-	width: 214px;
+	 width: 214px;
+	/* width: 100%; */
 	padding: 10px;
 	color: #333;
 	background: #ffffff;
@@ -1570,7 +1577,7 @@ button:focus{
 }
 .deals-tab .next-prev-btn-list .next-btn {
 	background: url('../img/Sprite.png') repeat -528px -100px;
-	margin-bottom: 20px;
+	margin-bottom: 10px;
 }
 .deals-tab .next-prev-btn-list .prev-btn {
 	background: url('../img/Sprite.png') repeat -579px -100px;
@@ -1761,9 +1768,12 @@ button:focus{
 .deals-tab .ui-selectmenu-button.ui-selectmenu-button-open:after{
 	background: url('../img/sprite.png') no-repeat -130px -160px;
 }	
-
+.vistara-deals-from{
+	margin-top: 30px;
+	margin-bottom: 12px;}
 .filter{
 	float: right;
+	margin-bottom: 12px;
     position: relative;
     z-index: 90;
 }
